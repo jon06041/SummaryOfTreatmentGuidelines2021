@@ -3,10 +3,10 @@ import { StyleSheet, Text, View, Platform,ScrollView } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import { Provider as PaperProvider} from 'react-native-paper';
 import { Button,AppBar,HStack, IconButton } from "@react-native-material/core";
-//import App from './App'
 import styles from '../src/styles';
+
+
 function TableOfContents ({navigation}){
 return (
 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -64,7 +64,7 @@ Accessible version: https://www.cdc.gov/std/treatment-guidelines/default.htm
 </Text>
 
 
-<Button title = "Back to the home page or hit back" onPress={() => navigation.navigate('HomeScreen')}/>
+
 </ScrollView>
 </View>
 
@@ -73,6 +73,8 @@ Accessible version: https://www.cdc.gov/std/treatment-guidelines/default.htm
 }
 
 
+      
+   
 
 
 
