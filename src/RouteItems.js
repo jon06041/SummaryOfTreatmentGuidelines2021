@@ -1,25 +1,29 @@
 import * as React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
+import StackNavigator from './StackNavigator';
 
 export const screens = {
-  HomeTab: 'HomeTab',
+  
   TestScreen: 'TestScreen',
   TableOfContents: 'TableOfContents',
   TermsOfUse: 'TermsOfUse',
-  Cervitis: 'Cervitis'
+  Cervitis: 'Cervitis',
+  StackNavigator: 'StackNavigator',
 }
 
 export const routes = [
-  {
-    name: screens.HomeTab,
-    focusedRoute: screens.HomeTab,
-    title: 'Home',
-    showInTab: true,
-    showInDrawer: true,
-    icon: (focused) =>
-    <Icon name="bars" size={20} color={focused ? '#ffffff18' : '#333'} />,
-  },
+  
+  
+    {
+      name: screens.StackNavigator,
+      focusedRoute: screens.StackNavigator,
+      title: 'Home',
+      showInTab: true,
+      showInDrawer: true,
+      icon: (focused) =>
+      <Icon name="bars" size={20} color={focused ? '#ffffff18' : '#333'} />,
+    },
   {
     name: screens.TestScreen,
     focusedRoute: screens.TestScreen,

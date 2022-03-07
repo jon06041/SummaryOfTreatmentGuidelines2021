@@ -6,6 +6,7 @@ import React, { createRef } from 'react'
 import { NavigationContainer,getFocusedRouteNameFromRoute,navigation} from '@react-navigation/native';
 import DrawerNavigator from './src/DrawerNavigator'
 import Cervitis from './screens/Cervitis';
+import StackNavigator from './src/StackNavigator';
 
 
 
@@ -23,7 +24,9 @@ const App = () => {
   <SafeAreaView style={styles.safeArea}>
       <StatusBar barStyle="dark-content" />
       <NavigationContainer ref={navigationRef}>
+       
           <DrawerNavigator nav={nav}  />
+         
       </NavigationContainer>
     </SafeAreaView>
  

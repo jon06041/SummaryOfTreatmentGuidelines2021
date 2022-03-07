@@ -1,6 +1,6 @@
 import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
-
+import { routes, screens, focusedRoute } from '../src/RouteItems'
 import {Image,Text,View,ScrollView,ImageBackground,TouchableOpacity,image,Dimensions} from "react-native";
 import * as React from "react";
 import {Button,AppBar, HStack,IconButton} from "@react-native-material/core";
@@ -24,15 +24,14 @@ import Trichomoniasis from '../screens/Trichomoniasis'
 import HomeTab from "../src/TabNavigator";
 import HomeScreen from "../screens/HomeScreen";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
-import { routes, screens } from '../src/RouteItems'
+
 import DrawerNavigator from "../src/DrawerNavigator";
 import TestScreen from "../screens/TestScreen";
 import BottomTabNavigator from "../src/TabNavigator";
-
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 
 
 const Stack = createNativeStackNavigator()
-
 
 const StackNavigator = () => {
     return (
@@ -52,7 +51,16 @@ const StackNavigator = () => {
   
       }} />
   
+  <Stack.Screen name='Home' component={DrawerNavigator}options={{ 
+      headerStyle: {
+        backgroundColor: '#ADD8E6',
+      },
+      headerTintColor: '#ffffff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
   
+      }} />
  <Stack.Screen name="Cervitis" component={Cervitis}options={{ title: 'Cervitis',
       headerStyle: {
         backgroundColor: '#ADD8E6',

@@ -12,7 +12,7 @@ import { Button,AppBar,HStack, IconButton } from "@react-native-material/core";
 function TermsOfUse ({navigation}){
 return (
 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-<Button title = "Back to the home page or hit back" onPress={() => navigation.navigate('Home')}/>
+<Button title = "Back to the home page or hit back" onPress={() => navigation.navigate('HomeTab')}/>
 </View>
 
 );

@@ -13,7 +13,7 @@ import TableOfContents from '../screens/TableOfContents'
 import TestScreenTab from '../src/TabNavigator'
 import Cervitis from '../screens/Cervitis'
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
-
+import StackNavigator from '../src/StackNavigator';
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {
   const currentRouteName = props.nav()?.getCurrentRoute().name // get focused route name
@@ -61,19 +61,8 @@ const DrawerNavigator = ({ nav }) => {
       drawerContent={(props) => <CustomDrawerContent {...props} nav={nav} />}
     >
   
-      <Drawer.Screen name={screens.HomeTab} component={BottomTabNavigator} options={{
       
-        headerTitle: () => <Image 
-        style={{ width: "10%", height: "10%" }}
-        source={require('../screens/images/cdclogo.png')}
-        resizeMode="cover" />,
-        headerRight: () => (
-          <View style={styles.headerRight}>
-            <Icon name="bell" size={20} color="#fff" />
-          </View>
-        ),
-      }}/>
-      
+      <Drawer.Screen name={screens.StackNavigator} component={StackNavigator}/>
     </Drawer.Navigator>
   )
 }
