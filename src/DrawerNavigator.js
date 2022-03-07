@@ -22,7 +22,7 @@ const CustomDrawerContent = (props) => {
           const focusedRoute = routes.find(r => r.name === currentRouteName)
           const focused = focusedRoute ?
             route.name === focusedRoute?.focusedRoute :
-            route.name === screens.HomeTab
+            route.name === screens.StackNavigator
           return (
             <DrawerItem
               key={route.name}
