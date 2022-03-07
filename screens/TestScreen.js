@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {  Button, AppBar,HStack, IconButton } from "@react-native-material/core";
 import {  Spacer, Divider } from 'react-native-flex-layout';
 import styles from '../src/styles';
-
+import Cervitis from '../screens/Cervitis';
 
 //const image = ('../screens/images/Treatmentfront.png'
 //);

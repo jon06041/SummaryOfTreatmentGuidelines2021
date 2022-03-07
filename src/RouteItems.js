@@ -1,13 +1,13 @@
 import * as React from 'react'
+import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export const screens = {
   HomeTab: 'HomeTab',
   TestScreen: 'TestScreen',
-  Home2: 'HomeScreen',
-  Home: 'Home',
+  TableOfContents: 'TableOfContents',
   TermsOfUse: 'TermsOfUse',
-  
+  Cervitis: 'Cervitis'
 }
 
 export const routes = [
@@ -15,10 +15,10 @@ export const routes = [
     name: screens.HomeTab,
     focusedRoute: screens.HomeTab,
     title: 'Home',
-    showInTab: false,
+    showInTab: true,
     showInDrawer: true,
     icon: (focused) =>
-      <Icon name="home" size={30} color={focused ? '#551E18' : '#000'} />,
+    <Icon name="bars" size={20} color={focused ? '#ffffff18' : '#333'} />,
   },
   {
     name: screens.TestScreen,
@@ -27,7 +27,7 @@ export const routes = [
     showInTab: true,
     showInDrawer: true,
     icon: (focused) =>
-      <Icon name="home" size={30} color={focused ? '#551E18' : '#000'} />,
+    <Icon name="bars" size={20} color={focused ? '#ffffff18' : '#333'} />,
   },
   
   
@@ -40,15 +40,7 @@ export const routes = [
     icon: (focused) =>
       <Icon name="home" size={30} color={focused ? '#ffffff18' : '#333'} />,
   },
-  {
-    name: screens.HomeScreen,
-    focusedRoute: screens.HomeScreen,
-    title: 'Home2',
-    showInTab: true,
-    showInDrawer: true,
-    icon: (focused) =>
-      <Icon name="home" size={30} color={focused ? '#551E18' : '#000'} />,
-  },
+  
   {
     name: screens.TermsOfUse,
     focusedRoute: screens.TermsOfUse,
@@ -60,7 +52,15 @@ export const routes = [
   },
 
   
-    
+  {
+    name: screens.Cervitis,
+    focusedRoute: screens.Cervitis,
+    title: 'Cervitis',
+    showInTab: false,
+    showInDrawer: true,
+    icon: (focused) =>
+      <Icon name="home" size={30} color={focused ? '#551E18' : '#000'} />,
+  },
 
   
 ]

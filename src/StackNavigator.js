@@ -1,16 +1,12 @@
 import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
+
 import {Image,Text,View,ScrollView,ImageBackground,TouchableOpacity,image,Dimensions} from "react-native";
 import * as React from "react";
 import {Button,AppBar, HStack,IconButton} from "@react-native-material/core";
 import styles from "./styles";
 import { NavigationContainer, NavigationHelpersContext } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { createStackNavigator } from '@react-navigation/stack'
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import TermsOfUse from "../screens/TermsOfUse";
-import Ionicon from "react-native-vector-icons/Ionicons";
-import TestScreen from '../screens/TestScreen'
 import Cervitis from '../screens/Cervitis'
 import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
 import Chlamydial_Infections from '../screens/Chlamydial_Infections'
@@ -25,14 +21,11 @@ import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
 import Scabies from '../screens/Scabies'
 import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
-import TermsOfUseStackNavigator from '../screens/TermsOfUse';
-import TableOfContents from '../screens/TableOfContents';
-import HomeStackNavigator from "../screens/HomeScreen";
+import HomeTab from "../src/TabNavigator";
 import HomeScreen from "../screens/HomeScreen";
-import HomeTab from "../screens/HomeScreen";
-import TabNavigator from "../src/TabNavigator";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { routes, screens } from '../src/RouteItems'
+import DrawerNavigator from "./DrawerNavigator";
 
 const Stack = createNativeStackNavigator()
 
@@ -44,32 +37,17 @@ const StackNavigator = () => {
   
   
   
-<Stack.Screen name="Homescreen" component={HomeTab}options={({ route }) => ({
-    headerShown: false,
-  })}/>
-  <Stack.Screen name="TermsOfUse" component={TermsOfUse}options={({ route }) => ({
-    headerTitle: 'Notes',
-  })}/>
-<Stack.Screen name='TestScreen'component={TestScreen}options={({ route }) => ({
-    headerTitle: "Diseases",headerStyle: {
-      backgroundColor: '#ADD8E6',
-    },
+<Stack.Screen name='HomeScreen' component={HomeScreen}options={{ 
+      headerStyle: {
+        backgroundColor: '#ADD8E6',
+      },
       headerTintColor: '#ffffff',
       headerTitleStyle: {
         fontWeight: 'bold',
       },
-  })}/>
-  <Stack.Screen name='TableOfContents'component={TableOfContents}options={({ route }) => ({
-    headerTitle: 'Notes',headerStyle: {
-      backgroundColor: '#ADD8E6',
-    },
-      headerTintColor: '#ffffff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
-  })}/>
   
-    
+      }} />
+  
   
  <Stack.Screen name="Cervitis" component={Cervitis}options={{ title: 'Cervitis',
       headerStyle: {

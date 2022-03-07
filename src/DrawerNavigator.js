@@ -1,4 +1,4 @@
-
+import "react-native-gesture-handler";
 import * as React from 'react'
 import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native'
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
@@ -6,11 +6,13 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import TermsOfUse from '../screens/TermsOfUse'
 import HomeScreen from '../screens/HomeScreen'
 import BottomTabNavigator from '../src/TabNavigator'
-import { routes, screens } from '../src/RouteItems'
+import { routes, screens, focusedRoute } from '../src/RouteItems'
 import HomeStackNavigator from '../screens/HomeScreen'
 import TestScreen from '../screens/TestScreen'
-
-
+import TableOfContents from '../screens/TableOfContents'
+import TestScreenTab from '../src/TabNavigator'
+import Cervitis from '../screens/Cervitis'
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {
@@ -31,6 +33,7 @@ const CustomDrawerContent = (props) => {
                   {route.title}
                 </Text>
               )}
+              
               onPress={() => props.navigation.navigate(route.name)}
               style={[styles.drawerItem, focused ? styles.drawerItemFocused : null]}
             />
@@ -57,8 +60,9 @@ const DrawerNavigator = ({ nav }) => {
       })}
       drawerContent={(props) => <CustomDrawerContent {...props} nav={nav} />}
     >
+  
       <Drawer.Screen name={screens.HomeTab} component={BottomTabNavigator} options={{
-        title: 'Home',
+      
         headerTitle: () => <Image 
         style={{ width: "10%", height: "10%" }}
         source={require('../screens/images/cdclogo.png')}
@@ -69,7 +73,6 @@ const DrawerNavigator = ({ nav }) => {
           </View>
         ),
       }}/>
-      
       
     </Drawer.Navigator>
   )
