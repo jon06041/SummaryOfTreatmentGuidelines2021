@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
-import StackNavigator from './StackNavigator';
+
 
 export const screens = {
   

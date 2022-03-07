@@ -8,7 +8,7 @@ import {  Button, AppBar,HStack, IconButton } from "@react-native-material/core"
 import {  Spacer, Divider } from 'react-native-flex-layout';
 import styles from '../src/styles';
 import Cervitis from '../screens/Cervitis'
-import StackNavigator from '../src/StackNavigator';
+
 import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
 import Chlamydial_Infections from '../screens/Chlamydial_Infections'
 import Epididymitis from '../screens/Epididymitis'

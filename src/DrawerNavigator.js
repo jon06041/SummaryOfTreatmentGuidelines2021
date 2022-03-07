@@ -3,11 +3,9 @@ import * as React from 'react'
 import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native'
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 import Icon from 'react-native-vector-icons/FontAwesome'
-import TermsOfUse from '../screens/TermsOfUse'
-import HomeScreen from '../screens/HomeScreen'
-import BottomTabNavigator from '../src/TabNavigator'
+
 import { routes, screens, focusedRoute } from '../src/RouteItems'
-import HomeStackNavigator from '../screens/HomeScreen'
+
 import TestScreen from '../screens/TestScreen'
 import TableOfContents from '../screens/TableOfContents'
 import TestScreenTab from '../src/TabNavigator'
@@ -62,7 +60,7 @@ const DrawerNavigator = ({ nav }) => {
     >
   
       
-      <Drawer.Screen name={screens.StackNavigator} component={StackNavigator}/>
+      <Drawer.Screen name={screens.StackNavigator} component={StackNavigator} options={{ headerTitle: "TopHome"}}/>
     </Drawer.Navigator>
   )
 }

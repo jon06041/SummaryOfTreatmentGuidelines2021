@@ -21,8 +21,6 @@ import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
 import Scabies from '../screens/Scabies'
 import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
-import HomeTab from "../src/TabNavigator";
-import HomeScreen from "../screens/HomeScreen";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 import DrawerNavigator from "../src/DrawerNavigator";
@@ -40,7 +38,7 @@ const StackNavigator = () => {
   
   
   
-<Stack.Screen name='HomeTab' component={BottomTabNavigator}options={{ 
+<Stack.Screen name='HomeTab1' component={BottomTabNavigator}options={{ 
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
