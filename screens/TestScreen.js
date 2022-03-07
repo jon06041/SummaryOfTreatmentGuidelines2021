@@ -7,8 +7,21 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {  Button, AppBar,HStack, IconButton } from "@react-native-material/core";
 import {  Spacer, Divider } from 'react-native-flex-layout';
 import styles from '../src/styles';
-import Cervitis from '../screens/Cervitis';
-
+import Cervitis from '../screens/Cervitis'
+import StackNavigator from '../src/StackNavigator';
+import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
+import Chlamydial_Infections from '../screens/Chlamydial_Infections'
+import Epididymitis from '../screens/Epididymitis'
+import HSV from '../screens/HSV'
+import HPV from '../screens/HPV'
+import Gonococcal_Infections from '../screens/Gonococcal_Infections'
+import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
+import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
+import Pediculosis_Pubis from '../screens/Pediculosis_Pubis'
+import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
+import Scabies from '../screens/Scabies'
+import Syphilis from '../screens/Syphilis'
+import Trichomoniasis from '../screens/Trichomoniasis'
 //const image = ('../screens/images/Treatmentfront.png'
 //);
 //'../screens/images/DNA Trans.png'
