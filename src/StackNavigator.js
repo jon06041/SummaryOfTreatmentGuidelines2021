@@ -25,7 +25,11 @@ import HomeTab from "../src/TabNavigator";
 import HomeScreen from "../screens/HomeScreen";
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { routes, screens } from '../src/RouteItems'
-import DrawerNavigator from "./DrawerNavigator";
+import DrawerNavigator from "../src/DrawerNavigator";
+import TestScreen from "../screens/TestScreen";
+import BottomTabNavigator from "../src/TabNavigator";
+
+
 
 const Stack = createNativeStackNavigator()
 
@@ -37,7 +41,7 @@ const StackNavigator = () => {
   
   
   
-<Stack.Screen name='HomeScreen' component={HomeScreen}options={{ 
+<Stack.Screen name='HomeTab' component={BottomTabNavigator}options={{ 
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
