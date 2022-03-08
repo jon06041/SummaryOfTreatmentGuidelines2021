@@ -12,6 +12,7 @@ import TestScreenTab from '../src/TabNavigator'
 import Cervitis from '../screens/Cervitis'
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import StackNavigator from '../src/StackNavigator';
+import TermsOfUse from "../screens/TermsOfUse";
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {
   const currentRouteName = props.nav()?.getCurrentRoute().name // get focused route name
@@ -22,7 +23,7 @@ const CustomDrawerContent = (props) => {
           const focusedRoute = routes.find(r => r.name === currentRouteName)
           const focused = focusedRoute ?
             route.name === focusedRoute?.focusedRoute :
-            route.name === screens.StackNavigator
+            route.name === screens.HomeTab
           return (
             <DrawerItem
               key={route.name}
@@ -47,7 +48,7 @@ const DrawerNavigator = ({ nav }) => {
     <Drawer.Navigator
       screenOptions={({ navigation }) => ({
         headerStyle: {
-          backgroundColor: '#551E18',
+          backgroundColor: '#0000b3',
           height: 50,
         },
         headerLeft: () => (
@@ -60,7 +61,21 @@ const DrawerNavigator = ({ nav }) => {
     >
   
       
-      <Drawer.Screen name={screens.StackNavigator} component={StackNavigator} options={{ headerTitle: "TopHome"}}/>
+      <Drawer.Screen name={screens.StackNavigator} component={StackNavigator} options={{
+        title: 'TopHome',
+        headerTitle: () => <Image source={require('../screens/images/cdclogo.png')} />,
+        headerRight: () => (
+          <View style={styles.headerRight}>
+            <Icon name="bell" size={20} color="#fff" />
+          </View>
+        ),
+      }}/>
+      <Drawer.Screen name={screens.TestScreen} component={TestScreen} options={{
+        headerTitle: 'Diseases'}}/>
+      <Drawer.Screen name={screens.TableOfContents} component={TableOfContents} options={{
+        headerTitle: 'Notes'}}/>
+      <Drawer.Screen name={screens.TermsOfUse} component={TermsOfUse} options={{
+        headerTitle: 'Terms Of Use'}} />
     </Drawer.Navigator>
   )
 }
@@ -80,6 +95,7 @@ const styles = StyleSheet.create({
   // drawer content
   drawerLabel: {
     fontSize: 14,
+    
   },
   drawerLabelFocused: {
     fontSize: 14,
@@ -91,7 +107,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   drawerItemFocused: {
-    backgroundColor: '#ba9490',
+    backgroundColor: '#0080ff',
   },
 
 Image: {

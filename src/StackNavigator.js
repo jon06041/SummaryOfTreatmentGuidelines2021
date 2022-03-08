@@ -28,7 +28,7 @@ import TestScreen from "../screens/TestScreen";
 import BottomTabNavigator from "../src/TabNavigator";
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 
-
+//everything in the Tab Navigator thinks it is home to the drawer and the stack -must figure this out
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
@@ -39,6 +39,7 @@ const StackNavigator = () => {
   
   
 <Stack.Screen name='HomeTab1' component={BottomTabNavigator}options={{ 
+      headerShown: false,
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -49,16 +50,7 @@ const StackNavigator = () => {
   
       }} />
   
-  <Stack.Screen name='Home' component={DrawerNavigator}options={{ 
-      headerStyle: {
-        backgroundColor: '#ADD8E6',
-      },
-      headerTintColor: '#ffffff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
   
-      }} />
  <Stack.Screen name="Cervitis" component={Cervitis}options={{ title: 'Cervitis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
