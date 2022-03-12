@@ -13,6 +13,8 @@ import Cervitis from '../screens/Cervitis'
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import StackNavigator from '../src/StackNavigator';
 import TermsOfUse from "../screens/TermsOfUse";
+
+
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {
   const currentRouteName = props.nav()?.getCurrentRoute().name // get focused route name
@@ -65,9 +67,9 @@ const DrawerNavigator = ({ nav }) => {
         title: 'TopHome',
         headerTitle: () => <Image source={require('../screens/images/cdclogo.png')} />,
         headerRight: () => (
-          <View style={styles.headerRight}>
-            <Icon name="bell" size={20} color="#fff" />
-          </View>
+          <TouchableOpacity onPress={() => alert('app created by Jon Sniffen Medical Diagnostic Laboratories')} style={styles.headerRight}>
+            <Icon name="info-circle" size={20} color="#fff" />
+          </TouchableOpacity>
         ),
       }}/>
       <Drawer.Screen name={screens.TestScreen} component={TestScreen} options={{
@@ -82,15 +84,15 @@ const DrawerNavigator = ({ nav }) => {
 
 const styles = StyleSheet.create({
   headerLeft: {
-    marginLeft: 15,
+    marginLeft: 20,
   },
   headerTitle: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '500',
   },
   headerRight: {
-    marginRight: 15,
+    marginRight: 20,
   },
   // drawer content
   drawerLabel: {
@@ -98,12 +100,12 @@ const styles = StyleSheet.create({
     
   },
   drawerLabelFocused: {
-    fontSize: 14,
+    fontSize: 16,
     color: '#551E18',
     fontWeight: '500',
   },
   drawerItem: {
-    height: 50,
+    height: 60,
     justifyContent: 'center'
   },
   drawerItemFocused: {

@@ -23,7 +23,7 @@ import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
-import DrawerNavigator from "../src/DrawerNavigator";
+
 import TestScreen from "../screens/TestScreen";
 import BottomTabNavigator from "../src/TabNavigator";
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
