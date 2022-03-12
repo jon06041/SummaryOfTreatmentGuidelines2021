@@ -15,6 +15,7 @@ import Ionicon from "react-native-vector-icons/Ionicons";
 import { FontAwesome5 } from '@expo/vector-icons'
 
 const fullScreenWidth = Dimensions.get("window").width;
+const fullScreenHeight = Dimensions.get("window").height;
 const Tab = createBottomTabNavigator()
 
 
