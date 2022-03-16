@@ -8,7 +8,7 @@ export const screens = {
   TestScreen: 'TestScreen',
   TableOfContents: 'TableOfContents',
   TermsOfUse: 'TermsOfUse',
-  Cervitis: 'Cervitis',
+  MDL: 'MDL',
   StackNavigator: 'StackNavigator',
 }
 
@@ -67,9 +67,9 @@ export const routes = [
 
   
   {
-    name: screens.Cervitis,
-    focusedRoute: screens.Cervitis,
-    title: 'Cervitis',
+    name: screens.MDL,
+    focusedRoute: screens.MDL,
+    title: 'About MDL',
     showInTab: false,
     showInDrawer: true,
     icon: (focused) =>

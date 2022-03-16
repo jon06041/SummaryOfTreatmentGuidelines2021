@@ -1,16 +1,13 @@
-import { Row } from 'react-bootstrap';
-import { StyleSheet, Text, View, Platform, ImageBackground,TouchableOpacity, Dimensions} from 'react-native';
 
-import {
-  heightPercentageToDP as hp,
-  widthPercentageToDP as wp,
- } from 'react-native-responsive-screen'
+import { StyleSheet, Dimensions} from 'react-native';
+
+
 
 const fullScreenWidth = Dimensions.get("window").width;
 const fullScreenHeight = Dimensions.get("window").height;
 console.log ({fullScreenHeight});
 console.log ({fullScreenWidth});
-//https://bendyworks.com/blog/implementing-react-native-responsive-design-part-2 has a way to apply the useDimensions hook conditionally 
+
 
 
 const styles = StyleSheet.create({
@@ -54,7 +51,58 @@ const styles = StyleSheet.create({
       fontFamily: 'AmericanTypewriter-CondensedBold',
       textAlign: 'center',
       
-  }
+  },
+  innerTextred: {
+     
+    justifyContent: 'space-around',
+     color: 'red',
+     fontWeight: 'bold',
+     fontSize: 16,
+     textTransform: 'uppercase',
+     alignItems:  'center',
+     margin: 10,
+     fontFamily: 'AmericanTypewriter-CondensedBold',
+     textAlign: 'center',
+     
+ },
+ innerTextyellow: {
+     
+  justifyContent: 'space-around',
+   color: '#EACE09',
+   fontWeight: 'bold',
+   fontSize: 16,
+   textTransform: 'uppercase',
+   alignItems:  'center',
+   margin: 10,
+   fontFamily: 'AmericanTypewriter-CondensedBold',
+   textAlign: 'center',
+   
+},
+innerTextgreen: {
+     
+  justifyContent: 'space-around',
+   color: 'green',
+   fontWeight: 'bold',
+   fontSize: 16,
+   textTransform: 'uppercase',
+   alignItems:  'center',
+   margin: 10,
+   fontFamily: 'AmericanTypewriter-CondensedBold',
+   textAlign: 'center',
+   
+},
+ baseText: {
+     
+  justifyContent: 'space-around',
+   color: 'black',
+   fontWeight: 'bold',
+   textTransform: 'uppercase',
+   alignItems:  'center',
+   margin: 10,
+   fontFamily: 'AmericanTypewriter-CondensedBold',
+   textAlign: 'center',
+   
+}
   });
 
   export default styles

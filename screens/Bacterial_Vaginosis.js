@@ -49,14 +49,16 @@ const MyComponent = () => {
         <List.Item />
         <View>
           <Text>
-            clindamycin ovules 100 mg intravaginally at bedtime for 3 days1 OR
-          </Text>
+            clindamycin ovules 100 mg intravaginally at bedtime for 3 days<Text style={{ fontSize: 8}}>1</Text> OR</Text>
+              
+            
+          
         </View>
         <List.Item />
         <View>
           <Text>
             secnidazole 2 gm orally in a single dose
-            <Text style={{ fontSize: 8, lineHeight: 37 }}>2</Text> OR
+            <Text style={{ fontSize: 8,  textAlignVertical: 'top'}}>2</Text> OR
           </Text>
         </View>
         <List.Item />

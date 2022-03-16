@@ -15,6 +15,7 @@ import HSV from '../screens/HSV'
 import HPV from '../screens/HPV'
 import Gonococcal_Infections from '../screens/Gonococcal_Infections'
 import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
+import MDL from '../screens/MDL'
 import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
 import Pediculosis_Pubis from '../screens/Pediculosis_Pubis'
 import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
@@ -50,7 +51,16 @@ const StackNavigator = () => {
   
       }} />
   
+  <Stack.Screen name="MDL" component={MDL}options={{ title: 'MDL',
+      headerStyle: {
+        backgroundColor: '#ADD8E6',
+      },
+      headerTintColor: '#ffffff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
   
+      }} />
  <Stack.Screen name="Cervitis" component={Cervitis}options={{ title: 'Cervitis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
