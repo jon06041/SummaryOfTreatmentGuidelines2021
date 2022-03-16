@@ -15,16 +15,54 @@ const MyComponent = () => {
   //const handlePress = () => setExpanded(!expanded);
 
   return (
-    <List.Section title="Accordions">
-      <List.Accordion
-        title="Uncontrolled Accordion"
-        left={props => <List.Icon {...props} icon="folder" />}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
+    <List.Section >
+   
+    <List.Accordion
+      title="Recommended Regimen"
+      left={props => <List.Icon {...props} icon="folder" />}>
+      <List.Item NumberOfLines={4} />
+      <View>
+<Text>
+doxycycline 100 mg orally 2x/day for 7 days
+</Text>
+</View>
       </List.Accordion>
-
-     
-    </List.Section>
+   
+    <List.Accordion
+            title="Alternate Regimens"
+            left={(props) => <List.Icon {...props} icon="folder" />}
+          >
+            <List.Item NumberOfLines={4} />
+            <View>
+              <Text>azithromycin 1 gm orally in a single dose OR</Text>
+            </View>
+            <List.Item NumberOfLines={4} />
+            <View>
+              <Text>azithromycin 500 mg orally in a single dose, THEN 250 mg 1x/day for 4 days</Text>
+            </View>
+          </List.Accordion>
+        
+          
+          <List.Accordion
+            title="Persistent or Recurrent NGU: test for Mycoplasma genitalium:"
+            left={(props) => <List.Icon {...props} icon="folder" />}
+          >
+            <List.Accordion
+      title="Recommended Regimen"
+      left={props => <List.Icon {...props} icon="folder" />}>
+      <List.Item NumberOfLines={4} />
+            <View>
+              <Text> OR</Text>
+            </View>
+            <List.Item NumberOfLines={4} />
+            <View>
+              <Text> days</Text>
+            </View>
+    </List.Accordion>
+            
+          </List.Accordion>
+          
+  </List.Section>
   );
 };
 

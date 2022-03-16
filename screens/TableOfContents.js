@@ -3,15 +3,15 @@ import { StyleSheet, Text, View, Platform,ScrollView } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import { Provider as PaperProvider} from 'react-native-paper';
 import { Button,AppBar,HStack, IconButton } from "@react-native-material/core";
-//import App from './App'
 import styles from '../src/styles';
+
+
 function TableOfContents ({navigation}){
 return (
 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 <ScrollView style={styles.scrollView}>
-<Text NumberOfLines={6}>
+<Text>
 1. Clindamycin ovules use an oleaginous base that might weaken latex or rubber products (e.g., condoms and diaphragms). Use of such products within 72 hours following treatment with clindamycin ovules is not recommended.
 {'\n'}{'\n'}
 2. Oral granules should be sprinkled onto unsweetened applesauce, yogurt, or pudding before ingestion. A glass of water can be taken after administration to aid in swallowing.
@@ -64,7 +64,7 @@ Accessible version: https://www.cdc.gov/std/treatment-guidelines/default.htm
 </Text>
 
 
-<Button title = "Back to the home page or hit back" onPress={() => navigation.navigate('HomeScreen')}/>
+
 </ScrollView>
 </View>
 
@@ -73,6 +73,8 @@ Accessible version: https://www.cdc.gov/std/treatment-guidelines/default.htm
 }
 
 
+      
+   
 
 
 
