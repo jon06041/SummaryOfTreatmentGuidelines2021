@@ -102,6 +102,18 @@ innerTextgreen: {
    fontFamily: 'AmericanTypewriter-CondensedBold',
    textAlign: 'center',
    
+},
+baseText2: {
+     
+  justifyContent: 'space-around',
+   color: 'black',
+   fontWeight: 'bold',
+   textTransform: 'uppercase',
+   alignItems:  'center',
+   margin: 10,
+   fontFamily: 'AmericanTypewriter-CondensedBold',
+   textAlign: 'left',
+   
 }
   });
 
