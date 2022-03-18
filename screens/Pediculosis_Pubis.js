@@ -15,12 +15,40 @@ const MyComponent = () => {
   //const handlePress = () => setExpanded(!expanded);
 
   return (
-    <List.Section title="Accordions">
+    <List.Section >
       <List.Accordion
-        title="Uncontrolled Accordion"
+        title="Recommended Regimens"
         left={props => <List.Icon {...props} icon="folder" />}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
+        <List.Item  />
+        <View>
+<Text>
+permethrin 1% cream rinse applied to affected areas, wash after 10 minutes OR
+</Text>
+
+        </View>
+        <List.Item  />
+        <View>
+          <Text>
+          pyrethrin with piperonyl butoxide applied to affected areas, wash after 10 minutes
+          </Text>
+        </View>
+      </List.Accordion>
+      <List.Accordion
+        title="Alternative Regimen"
+        left={props => <List.Icon {...props} icon="folder" />}>
+        <List.Item  />
+        <View>
+<Text>
+malathion 0.5% lotion applied to affected areas, wash after 8–12 hours OR
+</Text>
+
+        </View>
+        <List.Item  />
+        <View>
+          <Text>
+          ivermectin 250 μg/kg body weight repeated in 7–14 days
+          </Text>
+        </View>
       </List.Accordion>
 
      
