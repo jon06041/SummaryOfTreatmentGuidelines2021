@@ -87,8 +87,13 @@ doxycycline 100 mg orally 2x/day for 14 days WITH metronidazole 500 mg orally 2x
           </Text>
         </View>
       </List.Accordion>
-     
+      <View>
+      <Text>
+      The complete list of recommended regimens can be found in Sexually Transmitted Infections Treatment Guidelines, 2021.
+      </Text>
+    </View>
     </List.Section>
+    
   );
 };
 
