@@ -114,7 +114,11 @@ baseText2: {
    fontFamily: 'AmericanTypewriter-CondensedBold',
    textAlign: 'left',
    
-}
+},
+overlay: {
+  opacity: 0.5,
+  backgroundColor: '#000000'
+},
   });
 
   export default styles
