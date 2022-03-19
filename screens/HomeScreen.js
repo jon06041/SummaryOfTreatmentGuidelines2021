@@ -40,7 +40,7 @@ function HomeScreen({ navigation }) {
     <ImageBackground
       style={{ flex: 1 }}
       imageStyle={{ resizeMode: "stretch" }}
-      source={require("../screens/images/Treatmentfront.png")}
+      source={require("../screens/images/Treatmentfront2.png")}
     >
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
@@ -48,6 +48,10 @@ function HomeScreen({ navigation }) {
             style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
           ></View>
         </ScrollView>
+        
+    
+   
+  
       </View>
     </ImageBackground>
   );
