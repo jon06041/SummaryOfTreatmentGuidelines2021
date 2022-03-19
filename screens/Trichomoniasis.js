@@ -15,15 +15,57 @@ const MyComponent = () => {
   //const handlePress = () => setExpanded(!expanded);
 
   return (
-    <List.Section title="Accordions">
+    <List.Section title="Treatments">
       <List.Accordion
-        title="Uncontrolled Accordion"
+        title="Women
+        "titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon="folder" />}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
+          <List.Accordion
+        title="RECOMMENDED REGIMEN"
+        left={props => <List.Icon {...props} icon="folder" />}>
+        <List.Item  />
+        <View>
+         <Text>
+         metronidazole 500 mg orally 2x/day for 7 days
+         </Text>
+       </View>
+       </List.Accordion>
+       <List.Accordion
+        title="ALTERNATE REGIMEN"
+        left={props => <List.Icon {...props} icon="folder" />}>
+        <List.Item  />
+        <View>
+         <Text>
+         tinidazole 2 gm orally in a single dose
+         </Text>
+       </View>
+       </List.Accordion>
       </List.Accordion>
-
-     
+      <List.Accordion
+        title="Men
+        "titleNumberOfLines={4}
+        left={props => <List.Icon {...props} icon="folder" />}>
+          <List.Accordion
+        title="RECOMMENDED REGIMEN"
+        left={props => <List.Icon {...props} icon="folder" />}>
+        <List.Item  />
+        <View>
+         <Text>
+         metronidazole 2 gm orally in a single dose
+         </Text>
+       </View>
+       </List.Accordion>
+       <List.Accordion
+        title="ALTERNATE REGIMEN"
+        left={props => <List.Icon {...props} icon="folder" />}>
+        <List.Item  />
+        <View>
+         <Text>
+         tinidazole 2 gm orally in a single dose
+         </Text>
+       </View>
+       </List.Accordion>
+      </List.Accordion>
     </List.Section>
   );
 };
