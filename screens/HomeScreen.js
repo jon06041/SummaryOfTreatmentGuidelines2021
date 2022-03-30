@@ -40,7 +40,7 @@ function HomeScreen({ navigation }) {
     <ImageBackground
       style={{ flex: 1 }}
       imageStyle={{ resizeMode: "stretch" }}
-      source={require("../screens/images/Treatmentfront2.png")}
+      source={require("../screens/images/STIIphoneapp.png")}
     >
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
