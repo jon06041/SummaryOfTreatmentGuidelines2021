@@ -1,6 +1,6 @@
 
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Platform,ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Platform,ScrollView,ImageBackground, Image } from 'react-native';
 import * as React from 'react';
 import styles from '../src/styles';
 
@@ -15,8 +15,32 @@ function MDL ({navigation}){
     <Text style={styles.innerTextyellow}> Uro</Text>Swab and <Text style={styles.innerTextgreen}>Naso</Text>Swab These platforms enable MDL to offer a variety of PCR based tests from a single swab with high sensitivity and specificity
     
 </Text>
-    </ScrollView>
-    </View>
+<View
+            style={{ flex: 1, alignItems: "center", flexDirection: "row",justifyContent: "center" }}
+          >
+              <Image style={{ flex: 1 , justifyContent: "center"}}
+      source={require("../screens/images/mdl-genesis.png")}
+      />
+          </View>
+</ScrollView>
+</View>
+
+
+
+    
+      
+      
+      
+    
+      
+
+
+
+  
+
+    
+    
+    
 
 
 
