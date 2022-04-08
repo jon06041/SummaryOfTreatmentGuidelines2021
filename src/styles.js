@@ -119,6 +119,11 @@ overlay: {
   opacity: 0.5,
   backgroundColor: '#000000'
 },
+superscript: {
+  
+  fontSize: 8,
+  lineHeight: 8,
+}
   });
 
   export default styles

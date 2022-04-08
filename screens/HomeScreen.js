@@ -1,37 +1,18 @@
 import "react-native-gesture-handler";
-import { StatusBar } from "expo-status-bar";
 import {
-  Image,
-  Text,
   View,
   ScrollView,
   ImageBackground,
-  TouchableOpacity,
-  image,
   Dimensions,
 } from "react-native";
 import * as React from "react";
-import {
-  Button,
-  AppBar,
-  HStack,
-  IconButton,
-} from "@react-native-material/core";
-import styles from "../src/styles";
-//import {Tab} from '../src/Navigation';
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { createStackNavigator } from '@react-navigation/stack'
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import TermsOfUse from "./TermsOfUse";
-import TableOfContents from "../screens/TableOfContents";
-import TestScreen from "../screens/TestScreen";
-import Ionicon from "react-native-vector-icons/Ionicons";
-//import { createDrawerNavigator } from '@react-navigation/drawer';
 
-//const image = ('../screens/images/Treatmentfront.png'
-//);
-//'../screens/images/DNA Trans.png'
+import styles from "../src/styles";
+
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
 const fullScreenWidth = Dimensions.get("window").width;
 const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
@@ -67,6 +48,6 @@ const HomeStackNavigator = () => {
   )
 }
 
-//May need to change most references to HomeScreen -change to HomeStack depending on where from
+
 
 export default HomeStackNavigator;

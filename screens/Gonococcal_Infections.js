@@ -1,15 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Platform, ScrollView } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-//import { Provider as PaperProvider} from 'react-native-paper';
-import {
-  Button,
-  AppBar,
-  HStack,
-  IconButton,
-} from "@react-native-material/core";
-//import App from './App'
+
+import {  Text, View, ScrollView,Button } from "react-native";
+
 import * as React from "react";
 import { List } from "react-native-paper";
 import styles from "../src/styles";
@@ -22,7 +13,8 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
       <List.Section title="Treatment Options">
         <List.Accordion
-          title="Uncomplicated infections of the cervix, urethra, and rectum: adults and adolescents <150 kg6"
+          title="Uncomplicated infections of the cervix, urethra, and rectum: adults and adolescents <150 kg (see note 6)" 
+         
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
@@ -32,8 +24,9 @@ const MyComponent = () => {
               left={(props) => <List.Icon {...props} icon="folder" />}
             >
               <List.Item />
-              <View>
-                <Text>ceftriaxone 500 mg IM in a single dose17</Text>
+              
+              <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+                <Text>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
               </View>
             </List.Accordion>
             <List.Accordion
@@ -48,24 +41,24 @@ const MyComponent = () => {
                 </Text>
               </View>
               <List.Item NumberOfLines={4} />
-              <View>
+              <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
                 <Text>
                   If ceftriaxone administration is not available or not
-                  feasible: cefixime 800 mg orally in a single dose17
-                </Text>
+                  feasible: cefixime 800 mg orally in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
+                
               </View>
             </List.Accordion>
           </List.Section>
         </List.Accordion>
 
         <List.Accordion
-          title="Uncomplicated infection of the pharynx: adults and adolescents <150 kg6"
+          title="Uncomplicated infection of the pharynx: adults and adolescents <150 kg (see note 6)"
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
           <List.Item />
-          <View>
-            <Text>ceftriaxone 500 mg IM in a single dose17</Text>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            <Text>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
           </View>
         </List.Accordion>
 
@@ -74,8 +67,8 @@ const MyComponent = () => {
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
           <List.Item />
-          <View>
-            <Text>ceftriaxone 500 mg IM in a single dose17</Text>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            <Text>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
           </View>
         </List.Accordion>
 
@@ -85,12 +78,12 @@ const MyComponent = () => {
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
           <List.Item />
-          <View>
-            <Text>ceftriaxone 1 gm IM in a single dose18</Text>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            <Text>ceftriaxone 1 gm IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 18</Text>
           </View>
         </List.Accordion>
         <List.Accordion
-          title="Disseminated gonococcal infections (DGI)19"
+          title="Disseminated gonococcal infections (DGI) (see note 19)"
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
@@ -100,8 +93,8 @@ const MyComponent = () => {
               left={(props) => <List.Icon {...props} icon="folder" />}
             >
               <List.Item NumberOfLines={4} />
-              <View>
-                <Text>ceftriaxone 1 gm IM or by IV every 24 hours17OR</Text>
+              <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+                <Text>ceftriaxone 1 gm IM or by IV every 24 hours</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text><Text>OR</Text>
               </View>
             </List.Accordion>
             <List.Accordion

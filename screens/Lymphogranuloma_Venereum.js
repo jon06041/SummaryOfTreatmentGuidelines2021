@@ -1,10 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Platform,TouchableOpacity } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button,AppBar,HStack, IconButton, Icon, Collapsible, isCollapsed } from "@react-native-material/core";
+
+import {  Text, View, ScrollView} from 'react-native';
 import * as React from 'react';
 import { List } from 'react-native-paper';
+import styles from '../src/styles';
 
 const MyComponent = () => {
   const [expanded, setExpanded] = React.useState(true);
@@ -12,6 +10,7 @@ const MyComponent = () => {
   //const handlePress = () => setExpanded(!expanded);
 
   return (
+    <ScrollView style={styles.scrollView}>
     <List.Section title="Accordions">
       <List.Accordion
         title="Recommended Regimen"
@@ -39,6 +38,7 @@ doxycycline 100 mg orally 2x/day for 21 days
             </List.Accordion>
      
     </List.Section>
+    </ScrollView>
   );
 };
 

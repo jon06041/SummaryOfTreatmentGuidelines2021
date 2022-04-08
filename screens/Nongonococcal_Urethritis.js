@@ -1,13 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Platform,TouchableOpacity } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button,AppBar,HStack, IconButton, Icon, Collapsible, isCollapsed } from "@react-native-material/core";
 
-
-
+import {  Text, View, ScrollView } from 'react-native';
 import * as React from 'react';
 import { List } from 'react-native-paper';
+import styles from '../src/styles';
 
 const MyComponent = () => {
   const [expanded, setExpanded] = React.useState(true);
@@ -15,6 +10,7 @@ const MyComponent = () => {
   //const handlePress = () => setExpanded(!expanded);
 
   return (
+    <ScrollView style={styles.scrollView}>
     <List.Section >
    <List.Accordion
       title="Non Recurent Recommendations"
@@ -118,6 +114,7 @@ metronidazole 2 gm orally in a single dose OR tinidazole 2 gm orally in a single
           </List.Accordion>
           
   </List.Section>
+  </ScrollView>
   );
 };
 
