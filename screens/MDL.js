@@ -1,6 +1,6 @@
 
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Platform,ScrollView,ImageBackground, Image } from 'react-native';
+
+import {  Text, View, ScrollView, Image } from 'react-native';
 import * as React from 'react';
 import styles from '../src/styles';
 
