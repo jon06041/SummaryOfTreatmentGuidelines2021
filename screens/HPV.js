@@ -1,13 +1,6 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Platform, ScrollView } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import {
-  Button,
-  AppBar,
-  HStack,
-  IconButton,
-} from "@react-native-material/core";
+
+import {  Text, View,  ScrollView } from "react-native";
+
 import * as React from "react";
 import { List } from "react-native-paper";
 import styles from "../src/styles";
@@ -21,7 +14,7 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
       <List.Section title="Treatment Options">
         <List.Accordion
-          title="External anogenital warts12 "
+          title="External anogenital warts (see note 12) "
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
           <List.Item />
@@ -72,7 +65,7 @@ const MyComponent = () => {
           </View>
         </List.Accordion>
         <List.Accordion
-          title="Vaginal warts,14 Cervical warts,15 Intra-anal warts16 "
+          title="Vaginal warts (see note 14), Cervical warts (see note 15), Intra-anal warts (see note 16) "
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >

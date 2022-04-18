@@ -1,18 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Platform, ScrollView } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-//import { Provider as PaperProvider} from 'react-native-paper';
-import {
-  Button,
-  AppBar,
-  HStack,
-  IconButton,
-} from "@react-native-material/core";
-//import App from './App'
+
+import { Text, View,  ScrollView } from "react-native";
 import * as React from "react";
 import { List } from "react-native-paper";
 import styles from "../src/styles";
+
 const MyComponent = () => {
   const [expanded, setExpanded] = React.useState(true);
 
@@ -22,13 +13,13 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
       <List.Section title="Treatment Options">
         <List.Accordion
-          title="First clinical episode of genital herpes7 "
+          title="First clinical episode of genital herpes (see note 7)" 
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
           <List.Item />
-          <View>
-            <Text>acyclovir 400 mg orally 3x/day for 7–10 days8 OR</Text>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            <Text>acyclovir 400 mg orally 3x/day for 7–10 days</Text><Text style={styles.superscript}>8</Text><Text> OR</Text>
           </View>
           <List.Item />
           <View>
@@ -49,8 +40,8 @@ const MyComponent = () => {
             <Text>acyclovir 400 mg orally 2x/day OR</Text>
           </View>
           <List.Item />
-          <View>
-            <Text>valacyclovir 500 mg orally 1x/day9 OR</Text>
+          <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
+            <Text>valacyclovir 500 mg orally 1x/day</Text><Text style={styles.superscript}>9</Text><Text> OR</Text>
           </View>
           <List.Item />
           <View>
@@ -62,7 +53,7 @@ const MyComponent = () => {
           </View>
         </List.Accordion>
         <List.Accordion
-          title="Episodic therapy for recurrent genital herpes (HSV-2)10 "
+          title="Episodic therapy for recurrent genital herpes (HSV-2)(see note 10) "
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >
@@ -135,7 +126,7 @@ const MyComponent = () => {
           </View>
         </List.Accordion>
         <List.Accordion
-          title="Daily suppressive therapy of recurrent genital herpes in pregnant women11"
+          title="Daily suppressive therapy of recurrent genital herpes in pregnant women (see note 11)"
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon="folder" />}
         >

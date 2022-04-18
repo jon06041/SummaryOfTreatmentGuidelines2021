@@ -102,6 +102,27 @@ innerTextgreen: {
    fontFamily: 'AmericanTypewriter-CondensedBold',
    textAlign: 'center',
    
+},
+baseText2: {
+     
+  justifyContent: 'space-around',
+   color: 'black',
+   fontWeight: 'bold',
+   textTransform: 'uppercase',
+   alignItems:  'center',
+   margin: 10,
+   fontFamily: 'AmericanTypewriter-CondensedBold',
+   textAlign: 'left',
+   
+},
+overlay: {
+  opacity: 0.5,
+  backgroundColor: '#000000'
+},
+superscript: {
+  
+  fontSize: 8,
+  lineHeight: 8,
 }
   });
 
