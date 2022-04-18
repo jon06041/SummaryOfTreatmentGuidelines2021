@@ -1,31 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, Text, View, ScrollView, ImageBackground,TouchableOpacity, image, Dimensions} from 'react-native';
-import * as React from 'react';
-import { NavigationContainer} from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import { } from 'react-native-paper';
-import {  Button, AppBar,HStack, IconButton } from "@react-native-material/core";
-import {  Spacer, Divider } from 'react-native-flex-layout';
-import styles from '../src/styles';
-import Cervitis from '../screens/Cervitis'
 
-import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
-import Chlamydial_Infections from '../screens/Chlamydial_Infections'
-import Epididymitis from '../screens/Epididymitis'
-import HSV from '../screens/HSV'
-import HPV from '../screens/HPV'
-import Gonococcal_Infections from '../screens/Gonococcal_Infections'
-import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
-import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
-import Pediculosis_Pubis from '../screens/Pediculosis_Pubis'
-import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
-import Scabies from '../screens/Scabies'
-import Syphilis from '../screens/Syphilis'
-import Trichomoniasis from '../screens/Trichomoniasis'
+import {  Text, View, ScrollView, ImageBackground,TouchableOpacity, Dimensions} from 'react-native';
+import * as React from 'react';
+import styles from '../src/styles';
 import { AutoSizeText, ResizeTextMode } from 'react-native-auto-size-text';
-//const image = ('../screens/images/Treatmentfront.png'
-//);
-//'../screens/images/DNA Trans.png'
+
   
 const fullScreenWidth = Dimensions.get("window").width;
 const fullScreenHeight = Dimensions.get("window").height;

@@ -1,9 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Platform,ScrollView } from 'react-native';
+
+import { Text, View, Platform,ScrollView } from 'react-native';
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button,AppBar,HStack, IconButton } from "@react-native-material/core";
+
 import styles from '../src/styles';
 
 
