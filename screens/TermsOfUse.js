@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+
+import { Text, View, ScrollView } from 'react-native';
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import styles from '../src/styles';
 
 function TermsOfUse ({navigation}){
@@ -22,7 +21,7 @@ The Terms constitute an agreement between GBG and its affiliates (collectively, 
 {'\n'}{'\n'}
 Disclaimer
 {'\n'}{'\n'}
-The content contained in the App has been obtained from the Centers for Disease Control and Prevention’s (CDC) 2015 STD Treatment Guidelines. By visiting http://www.cdc.gov/std/tg2015, you may access the CDC’s entire 2015 STD Treatment Guidelines for your reference. GBG does not purport to have any affiliation with the CDC.
+The content contained in the App has been obtained from the Centers for Disease Control and Prevention’s (CDC) 2021 STD Treatment Guidelines. By visiting https://www.cdc.gov/std/treatment-guidelines/default.htm, you may access the CDC’s entire 2021 STD Treatment Guidelines for your reference. GBG does not purport to have any affiliation with the CDC.
 {'\n'}{'\n'}
 The information provided by this App, including the text, images, and graphics (collectively, “Information”) is intended to serve as a reference for physicians and healthcare professionals. The Information provided in this App is not meant to serve as a substitute for your own clinical judgment as a physician or healthcare professional. You should continue to evaluate and independently verify the Information provided herein. Nothing contained in this App is intended to be used as a substitute for your ultimate medical diagnosis or treatment. The Information is designed to support, and not replace, the relationship that exists between physicians or healthcare professionals and their patients and is not intended, nor recommended as a substitute for professional medical advice.
 {'\n'}{'\n'}
