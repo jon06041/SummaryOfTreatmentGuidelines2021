@@ -98,4 +98,84 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue'
   },
   
-});*/
+});
+
+Accordion
+import React, {useState} from 'react';
+import {View, SafeAreaView, StyleSheet, Text} from 'react-native';
+import {List} from 'react-native-paper';
+ 
+const GROUPS = 1
+const OPTIONS = 1
+ 
+const App = () => {
+  
+  const [arrs, updateArrs] = React.useState([])
+ 
+  React.useEffect(() => {
+    updateArrs(
+      [...Array(GROUPS).keys()]
+        .map(id => 
+          ({ 
+            id,
+            title: `Group ${id}`,
+            isExpanded: false,
+            options: [...Array(OPTIONS).keys()]
+              .map(key => 
+                ({ title: `Option ${key}` })
+            )
+          })
+        )
+    )
+  }, [])
+ 
+  const expand = obj => {
+    updateArrs(
+      [...arrs].map(arr => ({
+        ...arr,
+        isExpanded: obj.id === arr.id ? !arr.isExpanded : false
+      }))
+    )
+  }
+ 
+  return (
+    <SafeAreaView>
+      <View style={styles.container}>
+        <List.Section title="Accordions">
+          {arrs.map(acc => (
+            <List.Accordion
+            id={acc.id}
+              title={acc.title}
+              left={props => (
+                <List.Icon
+                  {...props}
+                  icon={
+                    acc.isExpanded
+                      ? 'folder-open'
+                      : 'folder'
+                  }
+                  color={'green'}
+                />
+              )}
+              right={props => null}
+              expanded={acc.isExpanded}
+              onPress={() => expand(acc)}>
+              {(acc.options || []).map(option => (
+                <List.Item title={option.title} />
+             
+              ))}
+            </List.Accordion>
+          ))}
+        </List.Section>
+      </View>
+    </SafeAreaView>
+  );
+};
+ 
+const styles = StyleSheet.create({
+  container: {
+    marginRight: 20,
+  },
+});
+ 
+export default App;*/

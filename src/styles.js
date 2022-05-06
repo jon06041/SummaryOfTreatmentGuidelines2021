@@ -40,18 +40,19 @@ const styles = StyleSheet.create({
       opacity: 0.85,
     },
 
+    
     buttonText: {
      
-     justifyContent: 'space-around',
-      color: 'black',
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-      alignItems:  'center',
-      margin: 10,
-      fontFamily: 'AmericanTypewriter-CondensedBold',
-      textAlign: 'center',
-      
-  },
+      justifyContent: 'space-around',
+       color: 'black',
+       fontWeight: 'bold',
+       textTransform: 'uppercase',
+       alignItems:  'center',
+       margin: 10,
+       fontFamily: 'AmericanTypewriter-CondensedBold',
+       textAlign: 'center',
+       
+   },
   innerTextred: {
      
     justifyContent: 'space-around',
@@ -90,6 +91,18 @@ innerTextgreen: {
    fontFamily: 'AmericanTypewriter-CondensedBold',
    textAlign: 'center',
    
+},
+accordionText: {
+     
+  justifyContent: 'space-around',
+  alignItems:  'center',
+  backgroundColor: 'skyblue',
+   color: 'black',
+   fontWeight: 'bold',
+   fontSize: 16,
+   textTransform: 'uppercase',
+   fontFamily: 'Arial',
+
 },
  baseText: {
      

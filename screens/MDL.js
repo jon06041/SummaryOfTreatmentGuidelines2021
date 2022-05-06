@@ -17,10 +17,7 @@ function MDL ({navigation}){
     
     <View>
       <Image source={require("../screens/images/mdl-genesis.png")}
-        resizeMode='contain'
-        style={{
-          
-          }} />
+         />
     
    
    </View>

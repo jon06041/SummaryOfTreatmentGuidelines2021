@@ -1,23 +1,26 @@
-
-import {  Text, View, ScrollView} from 'react-native';
 import * as React from 'react';
+import {  Text, View, ScrollView} from 'react-native';
 import { List } from 'react-native-paper';
+
 import styles from '../src/styles';
 
 const MyComponent = () => {
-  const [expanded, setExpanded] = React.useState(true);
-
-  //const handlePress = () => setExpanded(!expanded);
-
+  const [expandedone, setExpandedone] = React.useState(true);
+  const [expandedtwo, setExpandedtwo] = React.useState(true);
+  const handlePressone = () => setExpandedone(!expandedone);
+  const handlePresstwo = () => setExpandedtwo(!expandedtwo);
   return (
     <ScrollView style={styles.scrollView}>
     <List.Section title="Accordions">
       <List.Accordion
         title="Recommended Regimen"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
+        color={expandedone ? 'blue' : 'blue'}/>}
+        onPress={handlePressone}
+        >
         <List.Item  />
         <View>
-<Text>
+<Text NumberOfLines={4} style={styles.accordionText}>
 doxycycline 100 mg orally 2x/day for 21 days
 </Text>
 
@@ -25,15 +28,17 @@ doxycycline 100 mg orally 2x/day for 21 days
       </List.Accordion>
       <List.Accordion
               title="Alternate Regimens"
-              left={(props) => <List.Icon {...props} icon="folder" />}
+              left={(props) => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
+              color={expandedtwo ? 'blue' : 'blue'} />}
+              onPress={handlePresstwo}
             >
               <List.Item NumberOfLines={4} />
               <View>
-                <Text> azithromycin 1 gm orally 1x/week for 3 weeks 20 OR</Text>
+                <Text NumberOfLines={4} style={styles.accordionText}> azithromycin 1 gm orally 1x/week for 3 weeks 20 OR</Text>
               </View>
               <List.Item NumberOfLines={4} />
               <View>
-                <Text>erythromycin base 500 mg orally 4x/day for 21 days</Text>
+                <Text NumberOfLines={4} style={styles.accordionText}>erythromycin base 500 mg orally 4x/day for 21 days</Text>
               </View>
             </List.Accordion>
      

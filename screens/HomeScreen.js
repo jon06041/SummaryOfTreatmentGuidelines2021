@@ -21,7 +21,7 @@ function HomeScreen({ navigation }) {
     <ImageBackground
       style={{ flex: 1 }}
       imageStyle={{ resizeMode: "stretch" }}
-      source={require("../screens/images/STIIphoneapp.png")}
+      source={require("../screens/images/STIIphoneapp_2021edited.png")}
     >
       <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
