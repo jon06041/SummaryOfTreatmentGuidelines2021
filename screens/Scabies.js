@@ -1,23 +1,26 @@
-import { Text, View } from 'react-native';
-import styles from '../src/styles';
-
-
 import * as React from 'react';
+import { Text, View, ScrollView  } from 'react-native';
 import { List } from 'react-native-paper';
 
-const MyComponent = () => {
-  const [expanded, setExpanded] = React.useState(true);
+import styles from '../src/styles';
 
-  //const handlePress = () => setExpanded(!expanded);
+const MyComponent = () => {
+  const [expandedone, setExpandedone] = React.useState(true);
+  const [expandedtwo, setExpandedtwo] = React.useState(true);
+  const handlePressone = () => setExpandedone(!expandedone);
+  const handlePresstwo = () => setExpandedtwo(!expandedtwo);
 
   return (
+    <ScrollView style={styles.scrollView}>
     <List.Section title="Treatment Options">
       <List.Accordion
         title="RECOMMENDED REGIMEN"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
+        color={expandedone ? 'blue' : 'blue'}/>}
+        onPress={handlePressone}>
         <List.Item  />
         <View>
-          <Text>
+          <Text NumberOfLines={4} style={styles.accordionText}>
           permethrin 5% cream applied to all areas of the body (from neck down), wash after 8–14 hours21 OR
           </Text>
         
@@ -25,7 +28,7 @@ const MyComponent = () => {
         </View>
         <List.Item  />
         <View>
-          <Text>
+          <Text NumberOfLines={4} style={styles.accordionText}>
 
           ivermectin 200ug/kg body weight orally, repeated in 14 days22 OR
           </Text>
@@ -33,7 +36,7 @@ const MyComponent = () => {
         </View>
         <List.Item  />
         <View>
-          <Text>
+          <Text NumberOfLines={4} style={styles.accordionText}>
 
           ivermectin 1% lotion applied to all areas of the body (from neck down), wash after 8–14 hours; repeat treatment in 1 week if symptoms persist
           </Text>
@@ -43,10 +46,12 @@ const MyComponent = () => {
 
       <List.Accordion
         title="ALTERNATIVE REGIMEN"
-        left={props => <List.Icon {...props} icon="folder" />}>
+        left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
+        color={expandedtwo ? 'blue' : 'blue'} />}
+        onPress={handlePresstwo}>
         <List.Item  />
         <View>
-          <Text>
+          <Text NumberOfLines={4} style={styles.accordionText}>
 
           lindane 1% 1 oz of lotion or 30 gm of cream applied thinly to all areas of the body (from neck down), wash after 8 hours23
           </Text>
@@ -55,6 +60,7 @@ const MyComponent = () => {
         
       </List.Accordion>
     </List.Section>
+    </ScrollView>
   );
 };
 
