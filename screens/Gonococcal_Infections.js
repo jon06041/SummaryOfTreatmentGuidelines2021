@@ -1,9 +1,9 @@
-
-import {  Text, View, ScrollView,Button } from "react-native";
-
 import * as React from "react";
+import {  Text, View, ScrollView } from "react-native"
 import { List } from "react-native-paper";
+
 import styles from "../src/styles";
+
 const MyComponent = () => {
   const [expandedone, setExpandedone] = React.useState(true);
   const [expandedtwo, setExpandedtwo] = React.useState(true);
