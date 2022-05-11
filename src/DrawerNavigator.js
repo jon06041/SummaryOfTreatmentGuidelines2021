@@ -1,19 +1,15 @@
-import "react-native-gesture-handler";
 import * as React from 'react'
-import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Image, Text, TouchableOpacity } from 'react-native'
+import "react-native-gesture-handler";
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import { routes, screens, focusedRoute } from '../src/RouteItems'
-
 import TestScreen from '../screens/TestScreen'
 import TableOfContents from '../screens/TableOfContents'
-import TestScreenTab from '../src/TabNavigator'
-import Cervitis from '../screens/Cervitis'
-import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import StackNavigator from '../src/StackNavigator';
 import TermsOfUse from "../screens/TermsOfUse";
 
+import { routes, screens, focusedRoute } from '../src/RouteItems'
 
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {

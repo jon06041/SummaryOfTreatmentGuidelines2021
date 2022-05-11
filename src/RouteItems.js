@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
-
+import { FontAwesome5 } from '@expo/vector-icons'
 
 export const screens = {
   
@@ -13,16 +13,7 @@ export const screens = {
 }
 
 export const routes = [
-  {
-    name: screens.HomeTab,
-    focusedRoute: screens.BottomTabNavigator,
-    title: 'Home',
-    showInTab: true,
-    showInDrawer: false,
-    icon: (focused) =>
-    <Icon name="home" size={20} color={focused ? '#ffffff18' : '#333'} />,
-   
-  },
+  
   
     {
       name: screens.StackNavigator,
@@ -41,7 +32,7 @@ export const routes = [
     showInTab: true,
     showInDrawer: true,
     icon: (focused) =>
-    <Icon name="bars" size={20} color={focused ? '#ffffff18' : '#333'} />,
+    <Icon name={focused ? 'disease' : 'disease'} size={20} color={'#333'} />,
   },
   
   

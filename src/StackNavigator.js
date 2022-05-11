@@ -1,19 +1,14 @@
-import "react-native-gesture-handler";
-import { StatusBar } from "expo-status-bar";
-import { routes, screens, focusedRoute } from '../src/RouteItems'
-import {Image,Text,View,ScrollView,ImageBackground,TouchableOpacity,image,Dimensions} from "react-native";
 import * as React from "react";
-import {Button,AppBar, HStack,IconButton} from "@react-native-material/core";
-import styles from "./styles";
-import { NavigationContainer, NavigationHelpersContext } from "@react-navigation/native";
+import "react-native-gesture-handler";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Cervitis from '../screens/Cervitis'
+
 import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
+import Cervitis from '../screens/Cervitis'
 import Chlamydial_Infections from '../screens/Chlamydial_Infections'
 import Epididymitis from '../screens/Epididymitis'
-import HSV from '../screens/HSV'
-import HPV from '../screens/HPV'
 import Gonococcal_Infections from '../screens/Gonococcal_Infections'
+import HPV from '../screens/HPV'
+import HSV from '../screens/HSV'
 import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
 import MDL from '../screens/MDL'
 import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
@@ -22,14 +17,11 @@ import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
 import Scabies from '../screens/Scabies'
 import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
-import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
-
-import TestScreen from "../screens/TestScreen";
 import BottomTabNavigator from "../src/TabNavigator";
-import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 
-//everything in the Tab Navigator thinks it is home to the drawer and the stack -must figure this out
+
+
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
@@ -40,6 +32,17 @@ const StackNavigator = () => {
   
   
 <Stack.Screen name='HomeTab1' component={BottomTabNavigator}options={{ 
+      headerShown: false,
+      headerStyle: {
+        backgroundColor: '#ADD8E6',
+      },
+      headerTintColor: '#ffffff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+  
+      }} />
+      <Stack.Screen name='TestScreen' component={BottomTabNavigator}options={{ 
       headerShown: false,
       headerStyle: {
         backgroundColor: '#ADD8E6',

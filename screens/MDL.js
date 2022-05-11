@@ -3,6 +3,7 @@
 import {  Stylesheet,Text, View, ScrollView, Image, fullScreenWidth,fullScreenHeight,Dimensions } from 'react-native';
 import * as React from 'react';
 import styles from '../src/styles';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 function MDL ({navigation}){
     return (
@@ -16,10 +17,11 @@ function MDL ({navigation}){
 
     
     <View>
+       <TouchableOpacity>
       <Image source={require("../screens/images/mdl-genesis.png")}
-         />
+       resizeMode='center'  />
     
-   
+    </TouchableOpacity>
    </View>
    </ScrollView>
    </View>
