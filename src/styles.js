@@ -106,7 +106,7 @@ accordionText: {
 },
  baseText: {
      
-  justifyContent: 'space-around',
+  justifyContent: 'center',
    color: 'black',
    fontWeight: 'bold',
    textTransform: 'uppercase',

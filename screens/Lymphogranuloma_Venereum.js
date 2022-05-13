@@ -11,9 +11,9 @@ const MyComponent = () => {
   const handlePresstwo = () => setExpandedtwo(!expandedtwo);
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section title="Accordions">
+    <List.Section title="Treatment Options">
       <List.Accordion
-        title="Recommended Regimen"
+        title="Recommended Regimen" titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
         color={expandedone ? 'blue' : 'blue'}/>}
         onPress={handlePressone}
@@ -27,7 +27,7 @@ doxycycline 100 mg orally 2x/day for 21 days
         </View>
       </List.Accordion>
       <List.Accordion
-              title="Alternate Regimens"
+              title="Alternate Regimens" titleNumberOfLines={4}
               left={(props) => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
               color={expandedtwo ? 'blue' : 'blue'} />}
               onPress={handlePresstwo}

@@ -32,14 +32,14 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
     <List.Section >
    <List.Accordion
-      title="Non Recurent Recommendations"
+      title="Non Recurent Recommendations"titleNumberOfLines={4}
       left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
           color={expandedone ? 'blue' : 'blue'}/>}
           onPress={handlePressone}
           >
       <List.Item NumberOfLines={4} />
     <List.Accordion
-      title="Recommended Regimen"
+      title="Recommended Regimen"titleNumberOfLines={4}
       left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
       color={expandedtwo ? 'blue' : 'blue'} />}
       onPress={handlePresstwo}
@@ -53,7 +53,7 @@ doxycycline 100 mg orally 2x/day for 7 days
       </List.Accordion>
    
     <List.Accordion
-            title="Alternate Regimens"
+            title="Alternate Regimens"titleNumberOfLines={4}
             left={(props) => <List.Icon {...props} icon={expandedthree ? 'folder' : 'folder-open'}
             color={expandedthree ? 'blue' : 'blue'} />}
             onPress={handlePressthree}
@@ -70,19 +70,19 @@ doxycycline 100 mg orally 2x/day for 7 days
         </List.Accordion>
           
           <List.Accordion
-            title="Persistent or Recurrent NGU: test for Mycoplasma genitalium:"titleNumberOfLines={4}
+            title="Persistent or Recurrent NGU: test for Mycoplasma genitalium:"titleNumberOfLines={5}
             left={(props) => <List.Icon {...props} icon={expandedfour ? 'folder' : 'folder-open'}
             color={expandedfour ? 'blue' : 'blue'} />}
             onPress={handlePressfour}
           ><List.Item NumberOfLines={4} />
             <List.Accordion 
       title="If M. genitalium resistance testing is unavailable but M. genitalium is detected by an FDA-cleared NAAT
-      "titleNumberOfLines={4}
+      "titleNumberOfLines={7}
       left={props => <List.Icon {...props} icon={expandedfive ? 'folder' : 'folder-open'}
       color={expandedfive ? 'blue' : 'blue'}/>}
       onPress={handlePressfive}>
         <List.Accordion
-      title="Recommended Regimen"
+      title="Recommended Regimen"titleNumberOfLines={4}
       left={props => <List.Icon {...props} icon={expandedsix ? 'folder' : 'folder-open'}
       color={expandedsix ? 'blue' : 'blue'}/>}
       onPress={handlePresssix}>
@@ -94,7 +94,7 @@ doxycycline 100 mg orally 2x/day for 7 days, FOLLOWED BY moxifloxacin 400 mg 1x/
 </View>
       </List.Accordion>
       <List.Accordion
-            title="Alternate Regimens"
+            title="Alternate Regimens"titleNumberOfLines={4}
             left={(props) => <List.Icon {...props} icon={expandedseven ? 'folder' : 'folder-open'}
             color={expandedseven ? 'blue' : 'blue'}/>}
             onPress={handlePressseven}
@@ -117,7 +117,7 @@ for 3 days and a test-of-cure 21 days after completion of therapy</Text>
       color={expandedeight ? 'blue' : 'blue'}/>}
       onPress={handlePresseight}>
         <List.Accordion
-      title="Recommended Regimen"
+      title="Recommended Regimen"titleNumberOfLines={4}
       left={props => <List.Icon {...props} icon={expandednine ? 'folder' : 'folder-open'}
       color={expandednine ? 'blue' : 'blue'}/>}
       onPress={handlePressnine}>
@@ -137,12 +137,12 @@ doxycycline 100 mg orally 2x/day for 7 days, FOLLOWED BY moxifloxacin 400 mg ora
       title="Test for Trichomonas vaginalis in heterosexual men in areas where infection is prevalent
 
 
-      "titleNumberOfLines={4}
+      "titleNumberOfLines={7}
       left={props => <List.Icon {...props} icon={expandedten ? 'folder' : 'folder-open'}
       color={expandedten ? 'blue' : 'blue'}/>}
       onPress={handlePressten}>
         <List.Accordion
-      title="Recommended Regimen"
+      title="Recommended Regimen"titleNumberOfLines={4}
       left={props => <List.Icon {...props} icon={expandedeleven ? 'folder' : 'folder-open'}
       color={expandedeleven ? 'blue' : 'blue'}/>}
       onPress={handlePresseleven}>

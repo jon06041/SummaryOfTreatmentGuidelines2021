@@ -28,7 +28,7 @@ const MyComponent = () => {
           color={expandedone ? 'blue' : 'blue'}/>}
           onPress={handlePressone}>
           <List.Accordion
-        title="RECOMMENDED REGIMEN"
+        title="RECOMMENDED REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
         color={expandedtwo ? 'blue' : 'blue'} />}
         onPress={handlePresstwo}>
@@ -40,7 +40,7 @@ const MyComponent = () => {
        </View>
        </List.Accordion>
        <List.Accordion
-        title="ALTERNATE REGIMEN"
+        title="ALTERNATE REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedthree ? 'folder' : 'folder-open'}
         color={expandedthree ? 'blue' : 'blue'} />}
         onPress={handlePressthree}>
@@ -59,7 +59,7 @@ const MyComponent = () => {
         color={expandedfour ? 'blue' : 'blue'} />}
         onPress={handlePressfour}>
           <List.Accordion
-        title="RECOMMENDED REGIMEN"
+        title="RECOMMENDED REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedfive ? 'folder' : 'folder-open'}
         color={expandedfive ? 'blue' : 'blue'}/>}
         onPress={handlePressfive}>
@@ -71,7 +71,7 @@ const MyComponent = () => {
        </View>
        </List.Accordion>
        <List.Accordion
-        title="ALTERNATE REGIMEN"
+        title="ALTERNATE REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedsix ? 'folder' : 'folder-open'}
         color={expandedsix ? 'blue' : 'blue'}/>}
         onPress={handlePresssix}>

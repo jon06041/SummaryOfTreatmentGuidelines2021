@@ -1,13 +1,13 @@
 
 
-import {  Stylesheet,Text, View, ScrollView, Image, fullScreenWidth,fullScreenHeight,Dimensions } from 'react-native';
+import {  Stylesheet,Text, View, ScrollView, Image } from 'react-native';
 import * as React from 'react';
 import styles from '../src/styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 function MDL ({navigation}){
     return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: 22 }}>
+    <View style={{ flex: 1,  fontWeight: 'bold', fontSize: 22 }}>
     <ScrollView style={styles.scrollView}>
     <Text style={styles.baseText}>
     Medical Diagnostic Laboratories, L.L.C. (MDL), founded in 1997, serves primarily as a reference laboratory for Polymerase Chain Reaction (PCR) based testing to physicians, laboratories and hospitals worldwide.
@@ -17,9 +17,9 @@ function MDL ({navigation}){
 
     
     <View>
-       <TouchableOpacity>
+       <TouchableOpacity style={styles.container}>
       <Image source={require("../screens/images/mdl-genesis.png")}
-       resizeMode='center'  />
+       resizeMode='contain'  />
     
     </TouchableOpacity>
    </View>

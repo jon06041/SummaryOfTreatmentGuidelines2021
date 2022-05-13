@@ -14,7 +14,7 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
     <List.Section >
       <List.Accordion
-        title="Recommended Regimens"
+        title="Recommended Regimens"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
           color={expandedone ? 'blue' : 'blue'}/>}
           onPress={handlePressone}>
@@ -33,7 +33,7 @@ permethrin 1% cream rinse applied to affected areas, wash after 10 minutes OR
         </View>
       </List.Accordion>
       <List.Accordion
-        title="Alternative Regimen"
+        title="Alternative Regimen"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
         color={expandedtwo ? 'blue' : 'blue'} />}
         onPress={handlePresstwo}>

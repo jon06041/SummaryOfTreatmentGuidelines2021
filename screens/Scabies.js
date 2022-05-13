@@ -14,7 +14,7 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
     <List.Section title="Treatment Options">
       <List.Accordion
-        title="RECOMMENDED REGIMEN"
+        title="RECOMMENDED REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
         color={expandedone ? 'blue' : 'blue'}/>}
         onPress={handlePressone}>
@@ -45,7 +45,7 @@ const MyComponent = () => {
       </List.Accordion>
 
       <List.Accordion
-        title="ALTERNATIVE REGIMEN"
+        title="ALTERNATIVE REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
         color={expandedtwo ? 'blue' : 'blue'} />}
         onPress={handlePresstwo}>

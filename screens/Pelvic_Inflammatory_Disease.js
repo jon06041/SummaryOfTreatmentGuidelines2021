@@ -19,12 +19,12 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
     <List.Section>
       <List.Accordion
-        title="Parenteral treatment"
+        title="Parenteral treatment"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
         color={expandedone ? 'blue' : 'blue'}/>}
         onPress={handlePressone}>
           <List.Accordion
-        title="RECOMMENDED REGIMEN"
+        title="RECOMMENDED REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
         color={expandedtwo ? 'blue' : 'blue'} />}
         onPress={handlePresstwo}>
@@ -50,7 +50,7 @@ const MyComponent = () => {
         </View>
       </List.Accordion>
       <List.Accordion
-        title="ALTERNATE REGIMEN"
+        title="ALTERNATE REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedthree ? 'folder' : 'folder-open'}
         color={expandedthree ? 'blue' : 'blue'} />}
         onPress={handlePressthree}>
@@ -73,7 +73,7 @@ const MyComponent = () => {
       </List.Accordion>
       </List.Accordion>
       <List.Accordion
-        title="Intramuscular or oral treatment"
+        title="Intramuscular or oral treatment"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedfour ? 'folder' : 'folder-open'}
         color={expandedfour ? 'blue' : 'blue'} />}
         onPress={handlePressfour}>
@@ -99,6 +99,8 @@ doxycycline 100 mg orally 2x/day for 14 days WITH metronidazole 500 mg orally 2x
       </List.Accordion>
       <View>
       <Text NumberOfLines={4}>
+      {"\n"}
+      {"\n"}
       The complete list of recommended regimens can be found in Sexually Transmitted Infections Treatment Guidelines, 2021.
       </Text>
     </View>

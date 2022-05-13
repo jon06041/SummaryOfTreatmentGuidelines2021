@@ -22,7 +22,7 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
     <List.Section >
       <List.Accordion
-        title="Primary, secondary, and early latent: adults (including pregnant women and people with HIV infection)"titleNumberOfLines={4}
+        title="Primary, secondary, and early latent: adults (including pregnant women and people with HIV infection)"titleNumberOfLines={7}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
           color={expandedone ? 'blue' : 'blue'}/>}
           onPress={handlePressone}>
@@ -34,7 +34,7 @@ const MyComponent = () => {
        </View>
       </List.Accordion>
       <List.Accordion
-        title="Late latent adults (including pregnant women and people with HIV infection)"titleNumberOfLines={4}
+        title="Late latent adults (including pregnant women and people with HIV infection)"titleNumberOfLines={7}
         left={props => <List.Icon {...props} icon={expandedtwo ? 'folder' : 'folder-open'}
         color={expandedtwo ? 'blue' : 'blue'} />}
         onPress={handlePresstwo}>
@@ -52,7 +52,7 @@ const MyComponent = () => {
         color={expandedthree ? 'blue' : 'blue'} />}
         onPress={handlePressthree}>
           <List.Accordion
-        title="RECOMMENDED REGIMEN"
+        title="RECOMMENDED REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedfour ? 'folder' : 'folder-open'}
         color={expandedfour ? 'blue' : 'blue'} />}
         onPress={handlePressfour}>
@@ -64,7 +64,7 @@ const MyComponent = () => {
        </View>
        </List.Accordion>
        <List.Accordion
-        title="ALTERNATE REGIMEN"
+        title="ALTERNATE REGIMEN"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedfive ? 'folder' : 'folder-open'}
         color={expandedfive ? 'blue' : 'blue'}/>}
         onPress={handlePressfive}>
