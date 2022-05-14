@@ -38,6 +38,14 @@ const styles = StyleSheet.create({
       fontStyle: "normal",
       elevation:3,
       opacity: 0.85,
+      shadowColor: "grey",
+   shadowOffset: {
+     width: -10,
+     height: 9,
+   },
+   shadowOpacity: 0.5,
+   shadowRadius: 2,
+   elevation:5
     },
 
     

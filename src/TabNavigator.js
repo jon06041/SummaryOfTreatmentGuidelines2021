@@ -47,8 +47,8 @@ function  BottomTabNavigator () {
    
 
       
-   <Tab.Screen name="HomeTab" component={HomeTab} options={{ headerShown: false,tabBarLabel: 'Home' }}/>
-   <Tab.Screen name="TestScreen" component={TestScreen} options={{
+   <Tab.Screen style={styles.tabBarLabel} name="HomeTab" component={HomeTab} options={{ headerShown: false,tabBarLabel: 'Home' }}/>
+   <Tab.Screen style={styles.tabBarLabel} name="TestScreen" component={TestScreen} options={{
      headerTitle: 'Diseases',
      headerStyle: {
       backgroundColor: '#0080ff',
@@ -56,13 +56,13 @@ function  BottomTabNavigator () {
     },
       tabBarLabel: 'Diseases'
     }}/>
-   <Tab.Screen name="TableOfContents" component={TableOfContents}options={{headerTitle:'Notes',headerStyle: {
+   <Tab.Screen style={styles.tabBarLabel} name="TableOfContents" component={TableOfContents}options={{headerTitle:'Notes',headerStyle: {
       backgroundColor: '#0080ff',
       height: 50,
     }, tabBarLabel: 'Notes'}}/>
-   <Tab.Screen name="TermsOfUse" component={TermsOfUse}options={{headerTitle:'Terms Of Use',headerStyle: {
+   <Tab.Screen style={styles.tabBarLabel} tabBarLabel name="TermsOfUse" component={TermsOfUse}options={{headerTitle:'Terms Of Use',headerStyle: {
       backgroundColor: '#0080ff',
-      height: 50,
+      height: 50, 
     }, tabBarLabel: 'Terms Of Use'}}/>
    
    </Tab.Navigator>
@@ -74,7 +74,7 @@ function  BottomTabNavigator () {
    const styles = StyleSheet.create({
     tabBarLabel: {
       color: '#292929',
-      fontSize: 12,
+      fontSize: 10,
     },
     tabContainer: {
       height: 60,

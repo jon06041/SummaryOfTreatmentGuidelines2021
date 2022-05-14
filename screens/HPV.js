@@ -16,14 +16,14 @@ const MyComponent = () => {
     <ScrollView style={styles.scrollView}>
       <List.Section title="Treatment Options">
         <List.Accordion
-          title="External anogenital warts (see note 12) "titleNumberOfLines={4}
+          title="External anogenital warts (see note 12) " titleNumberOfLines={4} 
           left={(props) => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
           color={expandedone ? 'blue' : 'blue'}/>}
           onPress={handlePressone}
         >
           <List.Item />
           <View>
-            <Text NumberOfLines={4} style={styles.accordionText}>Patient-applied imiquimod 3.75% or 5% cream13 OR</Text>
+            <Text NumberOfLines={4} style={styles.accordionText}>Patient-applied imiquimod 3.75% or 5% cream<Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}>13</Text><Text> OR</Text></Text>
           </View>
           <List.Item />
           <View>
@@ -31,7 +31,7 @@ const MyComponent = () => {
           </View>
           <List.Item />
           <View>
-            <Text NumberOfLines={4} style={styles.accordionText}>sinecatechins 15% ointment13 OR</Text>
+            <Text NumberOfLines={4} style={styles.accordionText}>sinecatechins 15% ointment<Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}>13</Text><Text> OR</Text></Text>
           </View>
           <List.Item />
           <View>

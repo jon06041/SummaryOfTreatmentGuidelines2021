@@ -55,7 +55,7 @@ const MyComponent = () => {
               <List.Item />
               
               <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-                <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
+                <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}> 17</Text>
               </View>
             </List.Accordion>
             <List.Accordion

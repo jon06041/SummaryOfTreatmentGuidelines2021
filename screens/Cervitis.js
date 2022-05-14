@@ -14,7 +14,7 @@ const MyComponent = () => {
 
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section title="Treatment Options (see note 3)" titleNumberOfLines={4}>
+    <List.Section title="Treatment Options (see note 3)"  titleNumberOfLines={4}>
       <List.Accordion 
         title="RECOMMENDED REGIMEN" titleNumberOfLines={4}
         left={props => <List.Icon {...props}  icon={expandedone ? 'folder' : 'folder-open'}

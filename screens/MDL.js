@@ -1,6 +1,6 @@
 
 
-import {  Stylesheet,Text, View, ScrollView, Image } from 'react-native';
+import {  Stylesheet,Text, View, ScrollView, Image, Linking } from 'react-native';
 import * as React from 'react';
 import styles from '../src/styles';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -17,11 +17,14 @@ function MDL ({navigation}){
 
     
     <View>
-       <TouchableOpacity style={styles.container}>
-      <Image source={require("../screens/images/mdl-genesis.png")}
-       resizeMode='contain'  />
-    
+       <Text style={{textAlign: 'center'}}> click below to go to MDLAB.com</Text>
+       <TouchableOpacity   onPress={ ()=> Linking.openURL('https://www.mdlab.com') } style={styles.container}>
+      <Image  source={require("../screens/images/mdl-genesis.png")}resizeMode='contain' 
+         />
     </TouchableOpacity>
+    <Text style={{textAlign: 'center'}}>2439 Kuser Road . Hamilton NJ 08690-3303
+       www.mdlab.com . Toll Free 877-269-0090
+    </Text>
    </View>
    </ScrollView>
    </View>
