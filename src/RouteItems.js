@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 
-import { FontAwesome5 } from '@expo/vector-icons'
+import { FontAwesome5, Icon } from '@expo/vector-icons'
 
-const Icon = <FontAwesome5 name={'comments'} />;
+
 export const screens = {
+  
   
   TestScreen: 'TestScreen',
   TableOfContents: 'TableOfContents',
@@ -24,8 +25,8 @@ export const routes = [
       title: 'Home',
       showInTab: true,
       showInDrawer: true,
-      Icon: (focused) =>
-      <Icon name="Home" size={20} color={focused ? '#ffffff18' : '#333'} />,
+      icon: (focused) =>
+      <FontAwesome5 iconName="home" size={20} color={focused ? '#ffffff18' : '#333'} />,
      
     },
     
@@ -36,7 +37,7 @@ export const routes = [
     showInTab: true,
     showInDrawer: true,
     icon: (focused) =>
-    <Icon name={focused ? 'disease' : 'disease'} size={20} color={'#333'} />,
+    <FontAwesome5 iconName={focused ? 'disease' : 'disease'} size={20} color={'#333'} />,
   },
   
   

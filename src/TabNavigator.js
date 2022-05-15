@@ -40,6 +40,7 @@ function  BottomTabNavigator () {
       },
       tabBarActiveTintColor: '#0000b3',
       tabBarInactiveTintColor: 'gray',
+      
     })}>
      
      
@@ -59,7 +60,7 @@ function  BottomTabNavigator () {
       backgroundColor: '#0080ff',
       height: 50,
     }, tabBarLabel: 'Notes'}}/>
-   <Tab.Screen style={styles.tabBarLabel} tabBarLabel name="TermsOfUse" component={TermsOfUse}options={{headerTitle:'Terms Of Use',headerStyle: {
+   <Tab.Screen style={styles.tabBarLabel} tabBarLabel name="TermsOfUse" titleNumberOfLines={4} component={TermsOfUse}options={{headerTitle:'Terms Of Use',headerStyle: {
       backgroundColor: '#0080ff',
       height: 50, 
     }, tabBarLabel: 'Terms Of Use'}}/>
@@ -77,6 +78,7 @@ function  BottomTabNavigator () {
     },
     tabContainer: {
       height: 60,
+   
       backgroundColor: 'skyblue',
     }
   })

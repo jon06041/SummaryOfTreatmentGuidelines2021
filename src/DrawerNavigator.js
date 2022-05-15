@@ -19,7 +19,7 @@ const CustomDrawerContent = (props) => {
         routes.filter(route => route.showInDrawer).map((route) => {
           const focusedRoute = routes.find(r => r.name === currentRouteName)
           const focused = focusedRoute ?
-            route.name === focusedRoute?.focusedRoute :
+            route.name === focusedRoute ?.focusedRoute :
             route.name === screens.HomeTab
             
           return (
@@ -27,8 +27,8 @@ const CustomDrawerContent = (props) => {
             
               key={route.name}
               label={() => (
-                <Text style={focused ? styles.drawerLabelFocused : styles.drawerLabel}>
-                  {route.title}
+                <Text style={focused ? styles.drawerLabelFocused : styles.drawerLabel} >
+                  {route.title} 
                 </Text>
               )}
               
@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
   },
   drawerItem: {
     height: 60,
-    justifyContent: 'center'
-
+    justifyContent: 'center',
+    
   },
   drawerItemFocused: {
     backgroundColor: '#0080ff',
