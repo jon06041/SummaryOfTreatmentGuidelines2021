@@ -11,7 +11,6 @@ import TestScreen from "../screens/TestScreen";
 import TermsOfUse from "../screens/TermsOfUse";
 
 
-
 const Tab = createBottomTabNavigator()
 
 
@@ -78,6 +77,7 @@ function  BottomTabNavigator () {
     },
     tabContainer: {
       height: 60,
+      backgroundColor: 'skyblue',
     }
   })
 

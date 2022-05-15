@@ -4,10 +4,9 @@ import "react-native-gesture-handler";
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import TestScreen from '../screens/TestScreen'
-import TableOfContents from '../screens/TableOfContents'
+
 import StackNavigator from '../src/StackNavigator';
-import TermsOfUse from "../screens/TermsOfUse";
+
 
 import { routes, screens, focusedRoute } from '../src/RouteItems'
 
@@ -22,8 +21,10 @@ const CustomDrawerContent = (props) => {
           const focused = focusedRoute ?
             route.name === focusedRoute?.focusedRoute :
             route.name === screens.HomeTab
+            
           return (
             <DrawerItem
+            
               key={route.name}
               label={() => (
                 <Text style={focused ? styles.drawerLabelFocused : styles.drawerLabel}>
@@ -68,12 +69,9 @@ const DrawerNavigator = ({ nav }) => {
           </TouchableOpacity>
         ),
       }}/>
-      <Drawer.Screen name={screens.TestScreen} component={TestScreen} options={{
-        headerTitle: 'Diseases'}}/>
-      <Drawer.Screen name={screens.TableOfContents} component={TableOfContents} options={{
-        headerTitle: 'Notes'}}/>
-      <Drawer.Screen name={screens.TermsOfUse} component={TermsOfUse} options={{
-        headerTitle: 'Terms Of Use'}} />
+      
+      
+      
     </Drawer.Navigator>
   )
 }
@@ -103,6 +101,7 @@ const styles = StyleSheet.create({
   drawerItem: {
     height: 60,
     justifyContent: 'center'
+
   },
   drawerItemFocused: {
     backgroundColor: '#0080ff',

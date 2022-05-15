@@ -9,6 +9,7 @@ import Epididymitis from '../screens/Epididymitis'
 import Gonococcal_Infections from '../screens/Gonococcal_Infections'
 import HPV from '../screens/HPV'
 import HSV from '../screens/HSV'
+import IDC10 from '../screens/IDC10'
 import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
 import MDL from '../screens/MDL'
 import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
@@ -19,6 +20,7 @@ import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
 
 import BottomTabNavigator from "../src/TabNavigator";
+import TestScreen from "../screens/TestScreen";
 
 
 
@@ -42,10 +44,12 @@ const StackNavigator = () => {
       },
   
       }} />
-      <Stack.Screen name='TestScreen' component={BottomTabNavigator}options={{ 
-      headerShown: false,
+      
+      
+  
+  <Stack.Screen name="MDL" component={MDL}options={{ title: 'MDL',
       headerStyle: {
-        backgroundColor: '#ADD8E6',
+        backgroundColor: '#0080ff',
       },
       headerTintColor: '#ffffff',
       headerTitleStyle: {
@@ -53,10 +57,9 @@ const StackNavigator = () => {
       },
   
       }} />
-  
-  <Stack.Screen name="MDL" component={MDL}options={{ title: 'MDL',
+      <Stack.Screen name="IDC10" component={IDC10}options={{ title: 'Commonly Used IDC10 Codes',
       headerStyle: {
-        backgroundColor: '#ADD8E6',
+        backgroundColor: '#0080ff',
       },
       headerTintColor: '#ffffff',
       headerTitleStyle: {

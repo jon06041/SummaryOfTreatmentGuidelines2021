@@ -120,7 +120,7 @@ accordionText: {
    textTransform: 'uppercase',
    alignItems:  'center',
    margin: 10,
-   fontFamily: 'AmericanTypewriter-CondensedBold',
+   fontFamily: 'Arial',
    textAlign: 'center',
    
 },
@@ -132,7 +132,7 @@ baseText2: {
    textTransform: 'uppercase',
    alignItems:  'center',
    margin: 10,
-   fontFamily: 'AmericanTypewriter-CondensedBold',
+   fontFamily: 'Arial',
    textAlign: 'left',
    
 },
