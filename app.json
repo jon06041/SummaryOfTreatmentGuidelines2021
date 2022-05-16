@@ -18,14 +18,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jon0604.TreatmentGuidelines2021"
+      "bundleIdentifier": "com.sniffenapps.TreatmentGuidelines2021"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.jon0604.TreatmentGuidelines2021"
+      "package": "com.sniffenapps.TreatmentGuidelines2021"
     },
     "web": {
       "favicon": "./assets/favicon.png"
