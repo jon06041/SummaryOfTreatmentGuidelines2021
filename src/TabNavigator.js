@@ -38,6 +38,7 @@ function  BottomTabNavigator () {
         return <FontAwesome5 name={iconName} size={size} color={color} />;
         
       },
+      tabBarStyle: { backgroundColor: 'skyblue' },
       tabBarActiveTintColor: '#0000b3',
       tabBarInactiveTintColor: 'gray',
       
