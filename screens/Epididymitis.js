@@ -27,7 +27,7 @@ const MyComponent = () => {
       >
         <List.Item />
         <View>
-          <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose6 PLUS</Text>
+          <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}>6</Text> PLUS</Text>
         </View>
         <List.Item />
         <View>
@@ -43,7 +43,7 @@ const MyComponent = () => {
       >
         <List.Item />
         <View>
-          <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose6 PLUS</Text>
+          <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}>6</Text> PLUS</Text>
         </View>
         <List.Item />
         <View>
