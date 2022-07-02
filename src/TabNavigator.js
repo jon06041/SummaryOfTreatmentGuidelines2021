@@ -39,8 +39,8 @@ function  BottomTabNavigator () {
         
       },
       tabBarStyle: { backgroundColor: 'skyblue' },
-      tabBarActiveTintColor: '#0000b3',
-      tabBarInactiveTintColor: 'gray',
+      tabBarActiveTintColor: 'blue',
+      tabBarInactiveTintColor: '#0080ff',
       
     })}>
      
@@ -50,12 +50,12 @@ function  BottomTabNavigator () {
       
    <Tab.Screen style={styles.tabBarLabel} name="HomeTab" component={HomeTab} options={{ headerShown: false,tabBarLabel: 'Home' }}/>
    <Tab.Screen style={styles.tabBarLabel} name="TestScreen" component={TestScreen} options={{
-     headerTitle: 'Diseases',
+     headerTitle: 'Tests',
      headerStyle: {
       backgroundColor: '#0080ff',
       height: 50,
     },
-      tabBarLabel: 'Diseases'
+      tabBarLabel: 'Tests'
     }}/>
    <Tab.Screen style={styles.tabBarLabel} name="TableOfContents" component={TableOfContents}options={{headerTitle:'Notes',headerStyle: {
       backgroundColor: '#0080ff',

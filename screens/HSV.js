@@ -31,7 +31,9 @@ const MyComponent = () => {
         >
           <List.Item />
           <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-            <Text NumberOfLines={4} style={styles.accordionText}>acyclovir 400 mg orally 3x/day for 7–10 days</Text><Text style={styles.superscript}>8</Text><Text> OR</Text>
+            <Text NumberOfLines={4} style={styles.accordionText}>acyclovir 400 mg orally 3x/day for 7–10 days
+            <Text style={styles.superscript}>8</Text>
+            <Text style={styles.accordionText} NumberOfLines={4}> OR</Text></Text>
           </View>
           <List.Item />
           <View>
@@ -55,7 +57,7 @@ const MyComponent = () => {
           </View>
           <List.Item />
           <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-            <Text NumberOfLines={4} style={styles.accordionText}>valacyclovir 500 mg orally 1x/day</Text><Text style={styles.superscript}>9</Text><Text> OR</Text>
+            <Text NumberOfLines={4} style={styles.accordionText}>valacyclovir 500 mg orally 1x/day<Text style={styles.superscript}>9</Text><Text> OR</Text></Text>
           </View>
           <List.Item />
           <View>

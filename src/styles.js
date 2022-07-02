@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 
     
     buttonText: {
-     
+      fontSize: 20,
       justifyContent: 'space-around',
        color: 'black',
        fontWeight: 'bold',
@@ -109,7 +109,7 @@ accordionText: {
    fontWeight: 'bold',
    fontSize: 16,
    textTransform: 'uppercase',
-   fontFamily: 'Arial',
+   fontFamily: 'AmericanTypewriter-CondensedBold',
 
 },
  baseText: {
@@ -132,7 +132,7 @@ baseText2: {
    textTransform: 'uppercase',
    alignItems:  'center',
    margin: 10,
-   fontFamily: 'Arial',
+   fontFamily: 'AmericanTypewriter-CondensedBold',
    textAlign: 'left',
    
 },

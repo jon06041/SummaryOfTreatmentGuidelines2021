@@ -9,6 +9,7 @@ import StackNavigator from '../src/StackNavigator';
 
 
 import { routes, screens, focusedRoute } from '../src/RouteItems'
+import { Row } from 'react-bootstrap';
 
 const Drawer = createDrawerNavigator()
 const CustomDrawerContent = (props) => {
@@ -62,7 +63,7 @@ const DrawerNavigator = ({ nav }) => {
       
       <Drawer.Screen name={screens.StackNavigator} component={StackNavigator} options={{
         title: 'TopHome',
-        headerTitle: () => <Image source={require('../screens/images/cdclogo.png')} />,
+        headerTitle: () => <Image source={require('../screens/images/cdclogo.png')} style={styles.Image}  />,
         headerRight: () => (
           <TouchableOpacity  onPress={() => Alert.alert('About this App','This App was created by Jon Sniffen; Medical Diagnostic Laboratories, and reflects recommended regimens found in CDCs Sexually Transmitted Infections Treatment Guidelines, 2021. This summary is intended as a source of clinical guidance. When more than one therapeutic regimen is recommended, the sequence is in alphabetical order unless the choices for therapy are prioritized based on efficacy, cost, or convenience. The recommended regimens should be used primarily; alternative regimens can be considered in instances of substantial drug allergy or other contraindications. An important component of STI treatment is partner management. Providers can arrange for the evaluation and treatment of sex partners either directly or with assistance from state and local health departments. Complete guidelines can be found online at www.cdc.gov/std/treatment.')} style={styles.headerRight}>
             <Icon name="info-circle" size={20} color="#fff" />
@@ -108,8 +109,9 @@ const styles = StyleSheet.create({
   },
 
 Image: {
-  flex: 1,
+  flexDirection: 'row',
   aspectRatio: 1.5, 
+  alignItems: 'center',
   resizeMode: 'contain',
 }})
 
