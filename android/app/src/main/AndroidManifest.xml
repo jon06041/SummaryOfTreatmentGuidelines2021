@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sniffenapps.treatmentguidelines2021">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sniffenapps.TreatmentGuidelines2021">
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
@@ -27,6 +27,8 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="com.jon0604.SummaryOfTreatmentGuidelines2021"/>
+        <data android:scheme="com.sniffenapps.TreatmentGuidelines2021"/>
+        <data android:scheme="exp+treatmentguidelines2021"/>
       </intent-filter>
     </activity>
     <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>

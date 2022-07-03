@@ -1,4 +1,4 @@
-package com.sniffenapps.treatmentguidelines2021;
+package com.sniffenapps.TreatmentGuidelines2021;
 
 import android.os.Build;
 import android.os.Bundle;

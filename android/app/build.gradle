@@ -132,11 +132,11 @@ android {
     }
 
     defaultConfig {
-        applicationId 'com.jon0604.TreatmentGuidelines2021'
+        applicationId 'com.sniffenapps.TreatmentGuidelines2021'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.1.0"
     }
     splits {
         abi {
