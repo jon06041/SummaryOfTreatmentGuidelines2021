@@ -55,7 +55,7 @@ function  BottomTabNavigator () {
       backgroundColor: '#0080ff',
       height: 50,
     },
-      tabBarLabel: 'Diseases'
+      tabBarLabel: 'Tests'
     }}/>
    <Tab.Screen style={styles.tabBarLabel} name="TableOfContents" component={TableOfContents}options={{headerTitle:'Notes',headerStyle: {
       backgroundColor: '#0080ff',
@@ -74,7 +74,7 @@ function  BottomTabNavigator () {
   
    const styles = StyleSheet.create({
     tabBarLabel: {
-      color: '#292929',
+      color: '#d2e1f0',
       fontSize: 10,
     },
     tabContainer: {
