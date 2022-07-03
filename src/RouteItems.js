@@ -33,7 +33,7 @@ export const routes = [
   {
     name: screens.TestScreen,
     focusedRoute: screens.TestScreen,
-    title: 'Diseases',
+    title: 'Tests',
     showInTab: true,
     showInDrawer: true,
     icon: (focused) =>

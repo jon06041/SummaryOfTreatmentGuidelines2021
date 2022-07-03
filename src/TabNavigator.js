@@ -50,7 +50,7 @@ function  BottomTabNavigator () {
       
    <Tab.Screen style={styles.tabBarLabel} name="HomeTab" component={HomeTab} options={{ headerShown: false,tabBarLabel: 'Home' }}/>
    <Tab.Screen style={styles.tabBarLabel} name="TestScreen" component={TestScreen} options={{
-     headerTitle: 'Diseases',
+     headerTitle: 'Tests',
      headerStyle: {
       backgroundColor: '#0080ff',
       height: 50,
@@ -80,7 +80,7 @@ function  BottomTabNavigator () {
     tabContainer: {
       height: 60,
    
-      backgroundColor: 'skyblue',
+      backgroundColor: '#d2e1f0',
     }
   })
 
