@@ -1,8 +1,11 @@
 {
+  "name": "TreatmentGuidelines2021",
+  "displayName": "TreatmentGuidelines2021",
   "expo": {
     "name": "TreatmentGuidelines2021",
     "slug": "TreatmentGuidelines2021",
-    "version": "1.1.0",
+    "sdkVersion": "45.0.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
