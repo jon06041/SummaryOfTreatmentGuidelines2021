@@ -17,7 +17,7 @@ const MyComponent = () => {
 
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section>
+    <List.Section title="Treatment Options">
       <List.Accordion
         title="Parenteral treatment"titleNumberOfLines={4}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}
@@ -80,7 +80,7 @@ const MyComponent = () => {
         <List.Item  />
         <View>
           <Text NumberOfLines={4} style={styles.accordionText}>
-          ceftriaxone 500 mg IM in a single dose6 PLUS doxycycline 100 mg orally 2x/day for 14 days WITH metronidazole 500 mg orally 2x/day for 14 days OR
+          ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8}}> 6</Text> PLUS doxycycline 100 mg orally 2x/day for 14 days WITH metronidazole 500 mg orally 2x/day for 14 days OR
           </Text>
         </View>
         <List.Item  />

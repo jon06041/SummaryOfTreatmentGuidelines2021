@@ -17,24 +17,23 @@ return (
     
   <View style={styles.container}>
   <ScrollView style={styles.scrollView}>
-    <TouchableOpacity   onPress={() => navigation.navigate('Cervitis')} >
+  <TouchableOpacity  onPress={() => navigation.navigate('Trichomoniasis')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-	
-    <Text style={styles.buttonText}NumberOfLines={2}>Cervitis</Text>
+    <Text style={styles.buttonText}>Trichomonas vaginalis</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Bacterial_Vaginosis')} >
+    <TouchableOpacity  onPress={() => navigation.navigate('Gonococcal_Infections')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Bacterial Vaginosis</Text>
+    <Text style={styles.buttonText}>Neisseria gonorhoeae</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
@@ -44,47 +43,7 @@ return (
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Chlamydial Infection</Text>
-    </AutoSizeText>
-     </View>
-    </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Epididymitis')} >
-     <View style={styles.button}>
-     <AutoSizeText
-	fontSize={20}
-	numberOfLines={2}
-	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Epididymitis</Text>
-    </AutoSizeText>
-     </View>
-    <TouchableOpacity  onPress={() => navigation.navigate('HSV')} >
-     <View style={styles.button}>
-     <AutoSizeText
-	fontSize={20}
-	numberOfLines={2}
-	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Genital Herpes Simplex</Text>
-    </AutoSizeText>
-     </View>
-    </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('HPV')} >
-     <View style={styles.button}>
-     <AutoSizeText
-	fontSize={20}
-	numberOfLines={2}
-	mode={ResizeTextMode.max_lines}>
-    <Text  style={styles.buttonText}>Genital Warts (Human Papillomavirus)</Text>
-    </AutoSizeText>
-     </View>
-    </TouchableOpacity>
-    </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Gonococcal_Infections')} >
-     <View style={styles.button}>
-     <AutoSizeText
-	fontSize={20}
-	numberOfLines={2}
-	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Gonococcal Infections</Text>
+    <Text style={styles.buttonText}>Chlamydia trachomatis</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
@@ -98,23 +57,85 @@ return (
     </AutoSizeText>
      </View>
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Nongonococcal_Urethritis')} >
+    <TouchableOpacity  onPress={() => navigation.navigate('HSV')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Nongonococcal Urethritis (NGU)</Text>
+    <Text style={styles.buttonText}>Genital Herpes Simplex Virus (HSV)</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Pediculosis_Pubis')} >
+    <TouchableOpacity  onPress={() => navigation.navigate('Syphilis')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Pediculosis Pubis</Text>
+    <Text style={styles.buttonText}>Treponema pallidum</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+    <TouchableOpacity  onPress={() => navigation.navigate('Bacterial_Vaginosis')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+    <Text style={styles.buttonText}>Bacterial Vaginosis</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+    <TouchableOpacity  onPress={() => navigation.navigate('Avag')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+    <Text style={styles.buttonText}>Aerobic vaginitis</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+    <TouchableOpacity  onPress={() => navigation.navigate('VVC')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+    <Text style={styles.buttonText}>Vulvovaginal candidiasis</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+    <TouchableOpacity  onPress={() => navigation.navigate('HPV')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+    <Text  style={styles.buttonText}>Human Papillomavirus (Genital Warts)</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+
+    <TouchableOpacity   onPress={() => navigation.navigate('Cervicitis')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+	
+    <Text style={styles.buttonText}NumberOfLines={2}>Cervicitis</Text>
+    </AutoSizeText>
+     </View>
+    </TouchableOpacity>
+    <TouchableOpacity  onPress={() => navigation.navigate('Mgent')} >
+     <View style={styles.button}>
+     <AutoSizeText
+	fontSize={20}
+	numberOfLines={2}
+	mode={ResizeTextMode.max_lines}>
+    <Text style={styles.buttonText}>Mycoplasma genitalium</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
@@ -128,36 +149,38 @@ return (
     </AutoSizeText>
      </View>
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Scabies')} >
+    <TouchableOpacity  onPress={() => navigation.navigate('Nongonococcal_Urethritis')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Scabies</Text>
+    <Text style={styles.buttonText}>Nongonococcal Urethritis (NGU)</Text>
     </AutoSizeText>
      </View>
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Syphilis')} >
+
+    <TouchableOpacity  onPress={() => navigation.navigate('Epididymitis')} >
      <View style={styles.button}>
      <AutoSizeText
 	fontSize={20}
 	numberOfLines={2}
 	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Syphilis</Text>
+    <Text style={styles.buttonText}>Epididymitis</Text>
     </AutoSizeText>
      </View>
+    
+    
     </TouchableOpacity>
-    <TouchableOpacity  onPress={() => navigation.navigate('Trichomoniasis')} >
-     <View style={styles.button}>
-     <AutoSizeText
-	fontSize={20}
-	numberOfLines={2}
-	mode={ResizeTextMode.max_lines}>
-    <Text style={styles.buttonText}>Trichomoniasis</Text>
-    </AutoSizeText>
-     </View>
-    </TouchableOpacity>
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     </ScrollView>
     </View>

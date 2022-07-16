@@ -20,7 +20,7 @@ const MyComponent = () => {
 
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section title="Treatments">
+    <List.Section title="Treatment Options (see note 25)">
       <List.Accordion
         title="Women
         "titleNumberOfLines={4}

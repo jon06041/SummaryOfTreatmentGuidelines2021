@@ -103,7 +103,7 @@ const MyComponent = () => {
           </List.Section>
         </List.Accordion>
         <List.Accordion
-          title="Infant and children <45 kg4 (nasopharynx, urogenital, and rectal) " 
+          title="Infant and children <45 kg (see note 4) (nasopharynx, urogenital, and rectal) " 
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon={expandedseven ? 'folder' : 'folder-open'}
           color={expandedseven ? 'blue' : 'blue'}/>}
@@ -153,7 +153,7 @@ const MyComponent = () => {
           </View>
         </List.Accordion>
         <List.Accordion
-          title="Neonates:5 ophthalmia and pneumonia"
+          title="Neonates:(see note 5) ophthalmia and pneumonia"
           titleNumberOfLines={4}
           left={(props) => <List.Icon {...props} icon={expandedten ? 'folder' : 'folder-open'}
           color={expandedten ? 'blue' : 'blue'}/>}

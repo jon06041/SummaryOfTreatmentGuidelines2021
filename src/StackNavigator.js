@@ -3,7 +3,7 @@ import "react-native-gesture-handler";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Bacterial_Vaginosis from '../screens/Bacterial_Vaginosis'
-import Cervitis from '../screens/Cervitis'
+import Cervicitis from '../screens/Cervicitis'
 import Chlamydial_Infections from '../screens/Chlamydial_Infections'
 import Epididymitis from '../screens/Epididymitis'
 import Gonococcal_Infections from '../screens/Gonococcal_Infections'
@@ -13,9 +13,10 @@ import IDC10 from '../screens/IDC10'
 import Lymphogranuloma_Venereum from '../screens/Lymphogranuloma_Venereum'
 import MDL from '../screens/MDL'
 import Nongonococcal_Urethritis from '../screens/Nongonococcal_Urethritis'
-import Pediculosis_Pubis from '../screens/Pediculosis_Pubis'
+import Mgent from '../screens/Mgent'
+import Avag from '../screens/Avag'
 import Pelvic_Inflammatory_Disease from '../screens/Pelvic_Inflammatory_Disease'
-import Scabies from '../screens/Scabies'
+import VVC from '../screens/VVC'
 import Syphilis from '../screens/Syphilis'
 import Trichomoniasis from '../screens/Trichomoniasis'
 
@@ -67,7 +68,7 @@ const StackNavigator = () => {
       },
   
       }} />
- <Stack.Screen name="Cervitis" component={Cervitis}options={{ title: 'Cervitis',
+ <Stack.Screen name="Cervicitis" component={Cervicitis}options={{ title: 'Cervicitis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -89,7 +90,7 @@ const StackNavigator = () => {
       
       }}/>
 
-      <Stack.Screen name="Chlamydial_Infections" component={Chlamydial_Infections}options={{ title: 'Chlamydial Infections',
+      <Stack.Screen name="Chlamydial_Infections" component={Chlamydial_Infections}options={{ title: 'Chlamydia trachomatis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -120,7 +121,7 @@ const StackNavigator = () => {
       },
       
       }}/>
-<Stack.Screen name="HPV" component={HPV}options={{ title: 'Genital Warts (Human Papillomavirus)',
+<Stack.Screen name="HPV" component={HPV}options={{ title: 'Human Papillomavirus (Genital Warts)',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -131,7 +132,7 @@ const StackNavigator = () => {
       
       }}/>
 
-      <Stack.Screen name="Gonococcal_Infections" component={Gonococcal_Infections}options={{ title: 'Gonococcal Infections',
+      <Stack.Screen name="Gonococcal_Infections" component={Gonococcal_Infections}options={{ title: 'Neisseria gonorhoeae',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -161,7 +162,17 @@ const StackNavigator = () => {
       },
       
       }}/>
-      <Stack.Screen name="Pediculosis_Pubis" component={Pediculosis_Pubis}options={{ title: 'Pediculosis Pubis',
+      <Stack.Screen name="Mgent" component={Mgent}options={{ title: 'Mycoplasma genitalium',
+      headerStyle: {
+        backgroundColor: '#ADD8E6',
+      },
+      headerTintColor: '#ffffff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+      
+      }}/>
+      <Stack.Screen name="Avag" component={Avag}options={{ title: 'Aerobic vaginitis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -181,7 +192,7 @@ const StackNavigator = () => {
       },
       
       }}/>
-      <Stack.Screen name="Scabies" component={Scabies}options={{ title: 'Scabies',
+      <Stack.Screen name="VVC" component={VVC}options={{ title: 'Vulvovaginal candidiasis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -192,7 +203,7 @@ const StackNavigator = () => {
       
       }}/>
       
-      <Stack.Screen name="Syphilis" component={Syphilis}options={{ title: 'Syphilis',
+      <Stack.Screen name="Syphilis" component={Syphilis}options={{ title: 'Treponema pallidum',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },
@@ -202,7 +213,7 @@ const StackNavigator = () => {
       },
       
       }}/>
-      <Stack.Screen name="Trichomoniasis" component={Trichomoniasis}options={{ title: 'Trichomoniasis',
+      <Stack.Screen name="Trichomoniasis" component={Trichomoniasis}options={{ title: 'Trichomonas vaginalis',
       headerStyle: {
         backgroundColor: '#ADD8E6',
       },

@@ -20,7 +20,7 @@ const MyComponent = () => {
 
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section >
+    <List.Section title="Treatment Options">
       <List.Accordion
         title="Primary, secondary, and early latent: adults (including pregnant women and people with HIV infection)"titleNumberOfLines={7}
         left={props => <List.Icon {...props} icon={expandedone ? 'folder' : 'folder-open'}

@@ -17,7 +17,7 @@ const MyComponent = () => {
 
   return (
     <ScrollView style={styles.scrollView}>
-    <List.Section>
+    <List.Section title="Treatment Options">
       <List.Accordion
         title="For acute epididymitis most likely caused by sexually transmitted chlamydia and gonorrhea"
         titleNumberOfLines={3}

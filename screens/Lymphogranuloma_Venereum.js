@@ -34,7 +34,7 @@ doxycycline 100 mg orally 2x/day for 21 days
             >
               <List.Item NumberOfLines={4} />
               <View>
-                <Text NumberOfLines={4} style={styles.accordionText}> azithromycin 1 gm orally 1x/week for 3 weeks 20 OR</Text>
+                <Text NumberOfLines={4} style={styles.accordionText}> azithromycin 1 gm orally 1x/week for 3 weeks <Text style={{fontSize: 8, lineHeight: 8}}> 20</Text> OR</Text>
               </View>
               <List.Item NumberOfLines={4} />
               <View>

@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Dimensions, Platform,SafeAreaView, tabBarStyle,
 import React, { createRef } from 'react'
 import { NavigationContainer,getFocusedRouteNameFromRoute,navigation} from '@react-navigation/native';
 import DrawerNavigator from './src/DrawerNavigator'
-import Cervitis from './screens/Cervitis';
+import Cervicitis from './screens/Cervicitis';
 import StackNavigator from './src/StackNavigator';
 
 

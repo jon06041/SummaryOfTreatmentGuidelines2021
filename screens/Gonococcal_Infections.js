@@ -55,7 +55,7 @@ const MyComponent = () => {
               <List.Item />
               
               <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-                <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}> 17</Text>
+                <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8, backgroundColor: 'skyblue'}}> 17</Text></Text>
               </View>
             </List.Accordion>
             <List.Accordion
@@ -75,7 +75,7 @@ const MyComponent = () => {
               <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
                 <Text style={styles.accordionText}>
                   If ceftriaxone administration is not available or not
-                  feasible: cefixime 800 mg orally in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
+                  feasible: cefixime 800 mg orally in a single dose<Text style={{fontSize: 8, lineHeight: 8}}> 17</Text></Text>
                 
               </View>
             </List.Accordion>
@@ -91,7 +91,7 @@ const MyComponent = () => {
         >
           <List.Item />
           <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-            <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
+            <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8}}> 17</Text></Text>
           </View>
         </List.Accordion>
 
@@ -103,7 +103,7 @@ const MyComponent = () => {
         >
           <List.Item />
           <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-            <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text>
+            <Text style={styles.accordionText}>ceftriaxone 500 mg IM in a single dose<Text style={{fontSize: 8, lineHeight: 8}}> 17</Text></Text>
           </View>
         </List.Accordion>
 
@@ -116,7 +116,7 @@ const MyComponent = () => {
         >
           <List.Item />
           <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-            <Text style={styles.accordionText}>ceftriaxone 1 gm IM in a single dose</Text><Text style={{fontSize: 8, lineHeight: 8}}> 18</Text>
+            <Text style={styles.accordionText}>ceftriaxone 1 gm IM in a single dose<Text style={{fontSize: 8, lineHeight: 8}}> 18</Text></Text>
           </View>
         </List.Accordion>
         <List.Accordion
@@ -135,7 +135,7 @@ const MyComponent = () => {
             >
               <List.Item NumberOfLines={4} />
               <View style={{flexDirection: 'row', alignItems: 'flex-start'}}>
-                <Text style={styles.accordionText}>ceftriaxone 1 gm IM or by IV every 24 hours</Text><Text style={{fontSize: 8, lineHeight: 8}}> 17</Text><Text>OR</Text>
+                <Text style={styles.accordionText}>ceftriaxone 1 gm IM or by IV every 24 hours<Text style={{fontSize: 8, lineHeight: 8}}> 17</Text> OR</Text>
               </View>
             </List.Accordion>
             <List.Accordion
@@ -155,7 +155,20 @@ const MyComponent = () => {
             </List.Accordion>
           </List.Section>
         </List.Accordion>
-
+        <List.Accordion
+          title="Uncomplicated gonococcal vulvovaginitis, cervicitis, urethritis, pharyngitis, or proctitis: children ≤45 kg"
+          titleNumberOfLines={4}
+          left={(props) => <List.Icon {...props} icon={expandedten ? 'folder' : 'folder-open'}
+          color={expandedten ? 'blue' : 'blue'}/>}
+          onPress={handlePressten}
+        >
+          <List.Item />
+          <View>
+            <Text NumberOfLines={4} style={styles.accordionText}>
+            ceftriaxone 25–50 mg/kg body weight by IV or IM in a single dose, not to exceed 250 mg IM
+            </Text>
+          </View>
+        </List.Accordion>
         <List.Accordion
           title="Uncomplicated gonococcal vulvovaginitis, cervicitis, urethritis, pharyngitis, or proctitis: children >45 kg"
           titleNumberOfLines={4}
